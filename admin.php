@@ -71,7 +71,10 @@ class WPGiftVoucherAdminPages
 		
 		add_action( "load-$hook", array( $this, 'screen_option_voucher' ) );
 		add_action( "load-$templatehook", array( $this, 'screen_option_template' ) );
-		add_action( "load-$producthook", array( $this, 'screen_option_products' ) );
+		if(wpgv_is_woocommerce_enable()){
+			add_action( "load-$producthook", array( $this, 'screen_option_products' ) );
+		}
+		
 	}
 
 	/**
