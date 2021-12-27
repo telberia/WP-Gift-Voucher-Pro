@@ -150,7 +150,7 @@ function wpgv__doajax_voucher_pdf_save_func() {
 	);
 
 	$lastid = $wpdb->insert_id;
-	$voucher_order_by = __("Voucher ordered by test 2", "gift-voucher");
+	$voucher_order_by = __("Voucher ordered by", "gift-voucher");
 	$message_e = __("Message:", "gift-voucher");
 	WPGV_Gift_Voucher_Activity::record( $lastid, 'create', '', $voucher_order_by . " " . $for . ',' . $message_e . " " . $message );
 

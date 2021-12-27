@@ -203,7 +203,7 @@ jQuery('#voucherPincode').on('input blur', function() {
 });
 
 if (jQuery('#coupon_code_length').length) {
-    console.log(jQuery('#coupon_code_length').length);
+
     var numberlenght = jQuery('#coupon_code_length').val()
     var stringlenght = '1';
     var stringlenght1 = '9';
