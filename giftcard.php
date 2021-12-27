@@ -86,9 +86,9 @@ function wpgv_voucher_template_shortcode(){
                 </div>
                 <div id="setup-voucher-template" class="voucher-content-step">
                     <input type="hidden" name="coupon_code_length" id="coupon_code_length" value="'.$coupon_code_length.'">
-                    <input hidden id="voucher-id" value="" />
-                    <input hidden id="voucher-extra-charges" value="'.$wpgv_add_extra_charges.'" />
-                    <input hidden id="voucher-couponcode" value="" />
+                    <input type="hidden" id="voucher-id" value="" />
+                    <input type="hidden" id="voucher-extra-charges" value="'.$wpgv_add_extra_charges.'" />
+                    <input type="hidden" id="voucher-couponcode" value="" />
                     <div class="wrap-setup-voucher-template">
                         <div id="voucher-template-choose-gift" class="wrap-main-voucher-template">';
                             $html .='<div class="voucher-template-infomation">
