@@ -101,8 +101,8 @@ function wpgv_voucher_shortcode()
 
     $voucher_value_html = (!$wpgv_hide_price) ? '<div class="voucherValueForm">
                         <label>'.__('Voucher Value', 'gift-voucher' ).'</label>
-                        <span class="currencySymbol"> '.$setting_options->currency.' </span>
-                        <input type="text" name="voucherValueCard" class="voucherValueCard" readonly>
+                        <span class="currencySymbol" style="'. (($setting_options->currency_position == 'Left') ? 'left:15px;right:unset;' : 'right:15px;left:unset;') .'"> '.$setting_options->currency.' </span>
+                        <input style="'. (($setting_options->currency_position == 'Left') ? 'padding-left:30px;padding-right:10px' : 'padding-right:30px;padding-left:10px') .'" type="text" name="voucherValueCard" class="voucherValueCard" readonly>
                     </div>' : '';
 
     $wpgv_allow_future_date = get_option('wpgv_allow_future_date') ? get_option('wpgv_allow_future_date') : 0;
@@ -393,8 +393,8 @@ function wpgv_voucher_shortcode()
             '.$buying_for_html.'
             <div class="form-group">
                 <label for="voucherAmount">'.__('Voucher Value', 'gift-voucher' ).' '.$minVoucherValueMsg.'<sup>*</sup></label>
-                <span class="currencySymbol"> '.$setting_options->currency.' </span>
-                <input type="number" step="0.01" name="voucherAmount" id="voucherAmount" class="required" min="'.$minVoucherValue.'" max="'.$maxVoucherValue.'">
+                <span class="currencySymbol '.$setting_options->currency_position.'" style="'. (($setting_options->currency_position == 'Left') ? 'left:13px;right:unset;padding-right:30px' : 'right:13px;left:unset;padding-left:20px') .'"> '.$setting_options->currency.' </span>
+                <input style="'. (($setting_options->currency_position == 'Left') ? 'padding-right:10px;padding-left:40px;' : 'padding-left:10px;padding-right:40px;') .'" type="number" step="0.01" name="voucherAmount" id="voucherAmount" class="required" min="'.$minVoucherValue.'" max="'.$maxVoucherValue.'">
             </div>
             <div class="form-group">
                 <label for="voucherMessage">'.__('Personal Message (Optional)', 'gift-voucher' ).' ('.__('Max: 250 Characters', 'gift-voucher' ).')</label>
