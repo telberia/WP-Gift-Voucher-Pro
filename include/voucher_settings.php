@@ -6,6 +6,8 @@ global $wpdb;
 $setting_table_name = $wpdb->prefix . 'giftvouchers_setting';
 $invoice_table 	= $wpdb->prefix . 'giftvouchers_invoice_settings';
 $setting_invoice = $wpdb->get_row( "SELECT * FROM $invoice_table WHERE id = 1" );
+
+
 // var_dump($setting_invoice->is_invoice_active);
 // exit();
 if (!current_user_can('manage_options')) {
@@ -21,7 +23,7 @@ if (isset($_POST['company_name'])) {
 	if($check_setting->is_order_form_enable == ""){
 		$wpdb->query("ALTER TABLE $setting_table_name ADD is_order_form_enable INT(1) NOT NULL DEFAULT 1");
 	}
-
+	
 	wp_verify_nonce($_POST['voucher_settings_verify'], 'voucher_settings_verify');
 
 	$is_woocommerce_enable	   = sanitize_text_field($_POST['is_woocommerce_enable']);
@@ -88,7 +90,7 @@ if (isset($_POST['company_name'])) {
 	$paypal_alternative_text   = $_POST['paypal_alternative_text'];
 	$stripe_alternative_text   = $_POST['stripe_alternative_text'];
 	$customer_receipt 		     = $_POST['customer_receipt'];
-	$invoice_mail_enable     = !empty($_POST['invoice_mail_enable']) ? $_POST['invoice_mail_enable'] : $setting_invoice->is_invoice_active;
+	$invoice_mail_enable     = $_POST['invoice_mail_enable'];
 	$barcode_on_voucher 	     = $_POST['barcode_on_voucher'];
 	$additional_charges_text_voucher 	 = $_POST['additional_charges_text_voucher'];
 	$additional_charges_text_item      = $_POST['additional_charges_text_item'];
@@ -111,7 +113,7 @@ if (isset($_POST['company_name'])) {
 	foreach ($_POST['voucher_style'] as $value) {
 		$voucher_styles[] = $value;
 	}
-
+	
 	$wpdb->update(
 		$setting_table_name,
 		array(
@@ -187,6 +189,7 @@ if (isset($_POST['company_name'])) {
 	update_option('wpgv_paypal_alternative_text', $paypal_alternative_text);
 	update_option('wpgv_stripe_alternative_text', $stripe_alternative_text);
 	update_option('wpgv_customer_receipt', $customer_receipt);
+	
 	if ($customer_receipt == 1 || $invoice_mail_enable == 1) {
 		update_option('wpgv_invoice_mail_enable', $invoice_mail_enable);
 	}else{
@@ -811,7 +814,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'create_default_pages') { ?>
 									</th>
 									<td>
 										<div>
-										<input name="voucher_color_preview" type="text" id="voucher_bgcolor" value="<?php echo esc_html($color_preview); ?>" class="regular-text" aria-required="true">
+											<input name="voucher_color_preview" type="text" id="voucher_bgcolor" value="<?php echo esc_html($color_preview); ?>" class="regular-text" aria-required="true">
 										</div>
 									</td>
 								</tr>
