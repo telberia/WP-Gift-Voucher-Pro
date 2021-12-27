@@ -1,0 +1,838 @@
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Regular.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Regular.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Regular.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Regular.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Regular.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Regular.svg#Poppins-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-SemiBold.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-SemiBold.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-SemiBold.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-SemiBold.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-SemiBold.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-SemiBold.svg#Poppins-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Medium.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Medium.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Medium.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Medium.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Medium.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Medium.svg#Poppins-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Light.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Light.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Light.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Light.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Light.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Light.svg#Poppins-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins-Black';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Black.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Black.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Black.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Black.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Black.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Black.svg#Poppins-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Bold.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Bold.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Bold.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Bold.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Bold.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Bold.svg#Poppins-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Thin.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Thin.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Thin.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Thin.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Thin.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Thin.svg#Poppins-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT Sectra Display';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/GT Sectra Display/GTSectraDisplay-Medium.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/GT Sectra Display/GTSectraDisplay-Medium.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/GT Sectra Display/GTSectraDisplay-Medium.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/GT Sectra Display/GTSectraDisplay-Medium.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/GT Sectra Display/GTSectraDisplay-Medium.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/GT Sectra Display/GTSectraDisplay-Medium.svg#GTSectraDisplay-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Sectra Display';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/GT Sectra Display/GTSectraDisplay-Bold.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/GT Sectra Display/GTSectraDisplay-Bold.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/GT Sectra Display/GTSectraDisplay-Bold.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/GT Sectra Display/GTSectraDisplay-Bold.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/GT Sectra Display/GTSectraDisplay-Bold.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/GT Sectra Display/GTSectraDisplay-Bold.svg#GTSectraDisplay-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Sectra Display';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/GT Sectra Display/GTSectraDisplay-Light.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/GT Sectra Display/GTSectraDisplay-Light.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/GT Sectra Display/GTSectraDisplay-Light.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/GT Sectra Display/GTSectraDisplay-Light.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/GT Sectra Display/GTSectraDisplay-Light.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/GT Sectra Display/GTSectraDisplay-Light.svg#GTSectraDisplay-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Sectra Display';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/GT Sectra Display/GTSectraDisplay-Regular.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/GT Sectra Display/GTSectraDisplay-Regular.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/GT Sectra Display/GTSectraDisplay-Regular.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/GT Sectra Display/GTSectraDisplay-Regular.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/GT Sectra Display/GTSectraDisplay-Regular.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/GT Sectra Display/GTSectraDisplay-Regular.svg#GTSectraDisplay-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rozha One';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Rozha One/RozhaOne-Regular.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Rozha One/RozhaOne-Regular.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Rozha One/RozhaOne-Regular.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Rozha One/RozhaOne-Regular.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Rozha One/RozhaOne-Regular.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Rozha One/RozhaOne-Regular.svg#RozhaOne-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Black.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Black.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Black.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Black.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Black.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Black.svg#Poppins-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Bold.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Bold.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Bold.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Bold.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Bold.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Bold.svg#Poppins-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-SemiBold.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-SemiBold.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-SemiBold.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-SemiBold.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-SemiBold.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-SemiBold.svg#Poppins-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Light.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Light.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Light.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Light.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Light.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Light.svg#Poppins-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Medium.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Medium.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Medium.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Medium.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Medium.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Medium.svg#Poppins-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Regular.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Regular.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Regular.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Regular.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Regular.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Poppins/Poppins-Regular.svg#Poppins-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proza Libre';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Proza Libre/ProzaLibre-Medium.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Proza Libre/ProzaLibre-Medium.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Proza Libre/ProzaLibre-Medium.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Proza Libre/ProzaLibre-Medium.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Proza Libre/ProzaLibre-Medium.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Proza Libre/ProzaLibre-Medium.svg#ProzaLibre-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proza Libre';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Proza Libre/ProzaLibre-SemiBold.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Proza Libre/ProzaLibre-SemiBold.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Proza Libre/ProzaLibre-SemiBold.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Proza Libre/ProzaLibre-SemiBold.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Proza Libre/ProzaLibre-SemiBold.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Proza Libre/ProzaLibre-SemiBold.svg#ProzaLibre-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proza Libre';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Proza Libre/ProzaLibre-Bold.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Proza Libre/ProzaLibre-Bold.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Proza Libre/ProzaLibre-Bold.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Proza Libre/ProzaLibre-Bold.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Proza Libre/ProzaLibre-Bold.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Proza Libre/ProzaLibre-Bold.svg#ProzaLibre-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proza Libre';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Proza Libre/ProzaLibre-Regular.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Proza Libre/ProzaLibre-Regular.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Proza Libre/ProzaLibre-Regular.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Proza Libre/ProzaLibre-Regular.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Proza Libre/ProzaLibre-Regular.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Proza Libre/ProzaLibre-Regular.svg#ProzaLibre-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Impact';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Impact/Impact.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Impact/Impact.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Impact/Impact.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Impact/Impact.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Impact/Impact.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Impact/Impact.svg#Impact') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat/Montserrat-Medium.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat/Montserrat-Medium.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat/Montserrat-Medium.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat/Montserrat-Medium.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat/Montserrat-Medium.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat/Montserrat-Medium.svg#Montserrat-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat/Montserrat-Light.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat/Montserrat-Light.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat/Montserrat-Light.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat/Montserrat-Light.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat/Montserrat-Light.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat/Montserrat-Light.svg#Montserrat-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat/Montserrat-Black.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat/Montserrat-Black.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat/Montserrat-Black.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat/Montserrat-Black.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat/Montserrat-Black.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat/Montserrat-Black.svg#Montserrat-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat/Montserrat-Bold.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat/Montserrat-Bold.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat/Montserrat-Bold.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat/Montserrat-Bold.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat/Montserrat-Bold.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat/Montserrat-SemiBold.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat/Montserrat-SemiBold.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat/Montserrat-SemiBold.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat/Montserrat-SemiBold.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat/Montserrat-SemiBold.svg#Montserrat-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat/Montserrat-Regular.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat/Montserrat-Regular.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat/Montserrat-Regular.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat/Montserrat-Regular.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Italiana';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Italiana/Italiana-Regular.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Italiana/Italiana-Regular.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Italiana/Italiana-Regular.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Italiana/Italiana-Regular.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Italiana/Italiana-Regular.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Italiana/Italiana-Regular.svg#Italiana-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kranky';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Kranky/Kranky-Regular.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Kranky/Kranky-Regular.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Kranky/Kranky-Regular.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Kranky/Kranky-Regular.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Kranky/Kranky-Regular.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Kranky/Kranky-Regular.svg#Kranky-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Charmonman';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Charmonman/Charmonman-Regular.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Charmonman/Charmonman-Regular.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Charmonman/Charmonman-Regular.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Charmonman/Charmonman-Regular.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Charmonman/Charmonman-Regular.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Charmonman/Charmonman-Regular.svg#Charmonman-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Charmonman';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Charmonman/Charmonman-Bold.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Charmonman/Charmonman-Bold.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Charmonman/Charmonman-Bold.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Charmonman/Charmonman-Bold.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Charmonman/Charmonman-Bold.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Charmonman/Charmonman-Bold.svg#Charmonman-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Purple Purse';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Purple Purse/PurplePurse-Regular.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Purple Purse/PurplePurse-Regular.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Purple Purse/PurplePurse-Regular.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Purple Purse/PurplePurse-Regular.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Purple Purse/PurplePurse-Regular.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Purple Purse/PurplePurse-Regular.svg#PurplePurse-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rufina';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Rufina/Rufina-Bold.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Rufina/Rufina-Bold.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Rufina/Rufina-Bold.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Rufina/Rufina-Bold.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Rufina/Rufina-Bold.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Rufina/Rufina-Bold.svg#Rufina-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rufina';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Rufina/Rufina-Regular.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Rufina/Rufina-Regular.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Rufina/Rufina-Regular.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Rufina/Rufina-Regular.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Rufina/Rufina-Regular.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Rufina/Rufina-Regular.svg#Rufina-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Norican';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Norican/Norican-Regular.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Norican/Norican-Regular.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Norican/Norican-Regular.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Norican/Norican-Regular.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Norican/Norican-Regular.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Norican/Norican-Regular.svg#Norican-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Petit Formal Script';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Petit Formal Script/PetitFormalScript-Regular.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Petit Formal Script/PetitFormalScript-Regular.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Petit Formal Script/PetitFormalScript-Regular.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Petit Formal Script/PetitFormalScript-Regular.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Petit Formal Script/PetitFormalScript-Regular.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Petit Formal Script/PetitFormalScript-Regular.svg#PetitFormalScript-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/SF Pro Display/SFProDisplay-Regular.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/SF Pro Display/SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/SF Pro Display/SFProDisplay-Regular.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/SF Pro Display/SFProDisplay-Regular.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/SF Pro Display/SFProDisplay-Regular.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/SF Pro Display/SFProDisplay-Regular.svg#SFProDisplay-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Oswald/Oswald-Light.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Oswald/Oswald-Light.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Oswald/Oswald-Light.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Oswald/Oswald-Light.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Oswald/Oswald-Light.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Oswald/Oswald-Light.svg#Oswald-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Oswald/Oswald-Bold.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Oswald/Oswald-Bold.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Oswald/Oswald-Bold.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Oswald/Oswald-Bold.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Oswald/Oswald-Bold.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Oswald/Oswald-Bold.svg#Oswald-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Oswald/Oswald-Medium.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Oswald/Oswald-Medium.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Oswald/Oswald-Medium.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Oswald/Oswald-Medium.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Oswald/Oswald-Medium.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Oswald/Oswald-Medium.svg#Oswald-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Oswald/Oswald-Regular.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Oswald/Oswald-Regular.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Oswald/Oswald-Regular.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Oswald/Oswald-Regular.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Oswald/Oswald-Regular.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Oswald/Oswald-Regular.svg#Oswald-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Oswald/Oswald-SemiBold.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Oswald/Oswald-SemiBold.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Oswald/Oswald-SemiBold.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Oswald/Oswald-SemiBold.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Oswald/Oswald-SemiBold.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Oswald/Oswald-SemiBold.svg#Oswald-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chonburi';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Chonburi/Chonburi-Regular.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Chonburi/Chonburi-Regular.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Chonburi/Chonburi-Regular.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Chonburi/Chonburi-Regular.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Chonburi/Chonburi-Regular.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Chonburi/Chonburi-Regular.svg#Chonburi-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Murray Hill';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/murray-hill-bold/MurrayHillBoold.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/murray-hill-bold/MurrayHillBoold.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/murray-hill-bold/MurrayHillBoold.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/murray-hill-bold/MurrayHillBoold.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/murray-hill-bold/MurrayHillBoold.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/murray-hill-bold/MurrayHillBoold.svg#MurrayHillBoold') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rounded Mplus 1c';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/M PLUS Rounded 1c/RoundedMplus1c-Light.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/M PLUS Rounded 1c/RoundedMplus1c-Light.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/M PLUS Rounded 1c/RoundedMplus1c-Light.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/M PLUS Rounded 1c/RoundedMplus1c-Light.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/M PLUS Rounded 1c/RoundedMplus1c-Light.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/M PLUS Rounded 1c/RoundedMplus1c-Light.svg#RoundedMplus1c-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rounded Mplus 1c';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/M PLUS Rounded 1c/RoundedMplus1c-Medium.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/M PLUS Rounded 1c/RoundedMplus1c-Medium.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/M PLUS Rounded 1c/RoundedMplus1c-Medium.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/M PLUS Rounded 1c/RoundedMplus1c-Medium.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/M PLUS Rounded 1c/RoundedMplus1c-Medium.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/M PLUS Rounded 1c/RoundedMplus1c-Medium.svg#RoundedMplus1c-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rounded Mplus 1c';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/M PLUS Rounded 1c/RoundedMplus1c-Bold.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/M PLUS Rounded 1c/RoundedMplus1c-Bold.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/M PLUS Rounded 1c/RoundedMplus1c-Bold.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/M PLUS Rounded 1c/RoundedMplus1c-Bold.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/M PLUS Rounded 1c/RoundedMplus1c-Bold.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/M PLUS Rounded 1c/RoundedMplus1c-Bold.svg#RoundedMplus1c-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rounded Mplus 1c';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/M PLUS Rounded 1c/RoundedMplus1c-Regular.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/M PLUS Rounded 1c/RoundedMplus1c-Regular.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/M PLUS Rounded 1c/RoundedMplus1c-Regular.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/M PLUS Rounded 1c/RoundedMplus1c-Regular.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/M PLUS Rounded 1c/RoundedMplus1c-Regular.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/M PLUS Rounded 1c/RoundedMplus1c-Regular.svg#RoundedMplus1c-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Julius Sans One';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Julius Sans One/JuliusSansOne-Regular.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Julius Sans One/JuliusSansOne-Regular.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Julius Sans One/JuliusSansOne-Regular.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Julius Sans One/JuliusSansOne-Regular.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Julius Sans One/JuliusSansOne-Regular.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Julius Sans One/JuliusSansOne-Regular.svg#JuliusSansOne-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paprika';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Paprika/Paprika-Regular.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Paprika/Paprika-Regular.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Paprika/Paprika-Regular.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Paprika/Paprika-Regular.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Paprika/Paprika-Regular.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Paprika/Paprika-Regular.svg#Paprika-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Grenze';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Grenze/Grenze-Bold.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Grenze/Grenze-Bold.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Grenze/Grenze-Bold.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Grenze/Grenze-Bold.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Grenze/Grenze-Bold.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Grenze/Grenze-Bold.svg#Grenze-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Grenze';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Grenze/Grenze-Light.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Grenze/Grenze-Light.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Grenze/Grenze-Light.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Grenze/Grenze-Light.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Grenze/Grenze-Light.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Grenze/Grenze-Light.svg#Grenze-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Grenze';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Grenze/Grenze-Medium.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Grenze/Grenze-Medium.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Grenze/Grenze-Medium.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Grenze/Grenze-Medium.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Grenze/Grenze-Medium.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Grenze/Grenze-Medium.svg#Grenze-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Grenze';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Grenze/Grenze-Regular.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Grenze/Grenze-Regular.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Grenze/Grenze-Regular.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Grenze/Grenze-Regular.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Grenze/Grenze-Regular.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Grenze/Grenze-Regular.svg#Grenze-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Grenze';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Grenze/Grenze-SemiBold.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Grenze/Grenze-SemiBold.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Grenze/Grenze-SemiBold.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Grenze/Grenze-SemiBold.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Grenze/Grenze-SemiBold.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Grenze/Grenze-SemiBold.svg#Grenze-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Prata';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Prata/Prata-Regular.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Prata/Prata-Regular.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Prata/Prata-Regular.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Prata/Prata-Regular.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Prata/Prata-Regular.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Prata/Prata-Regular.svg#Prata-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Roboto/Roboto-Light.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Roboto/Roboto-Light.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Roboto/Roboto-Light.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Roboto/Roboto-Light.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Roboto/Roboto-Light.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Roboto/Roboto-Light.svg#Roboto-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Roboto/Roboto-Regular.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Roboto/Roboto-Regular.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Roboto/Roboto-Regular.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Roboto/Roboto-Regular.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Roboto/Roboto-Regular.svg#Roboto-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Roboto/Roboto-Medium.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Roboto/Roboto-Medium.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Roboto/Roboto-Medium.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Roboto/Roboto-Medium.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Roboto/Roboto-Medium.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Roboto/Roboto-Medium.svg#Roboto-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Roboto/Roboto-Black.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Roboto/Roboto-Black.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Roboto/Roboto-Black.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Roboto/Roboto-Black.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Roboto/Roboto-Black.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Roboto/Roboto-Black.svg#Roboto-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Roboto/Roboto-Bold.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Roboto/Roboto-Bold.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Roboto/Roboto-Bold.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Roboto/Roboto-Bold.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Roboto/Roboto-Bold.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Roboto/Roboto-Bold.svg#Roboto-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Helvetica/HelveticaMedium.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Helvetica/HelveticaMedium.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Helvetica/HelveticaMedium.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Helvetica/HelveticaMedium.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Helvetica/HelveticaMedium.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Helvetica/HelveticaMedium.svg#HelveticaMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Helvetica/Helvetica-Light.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Helvetica/Helvetica-Light.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Helvetica/Helvetica-Light.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Helvetica/Helvetica-Light.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Helvetica/Helvetica-Light.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Helvetica/Helvetica-Light.svg#Helvetica-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Helvetica/Helvetica.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Helvetica/Helvetica.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Helvetica/Helvetica.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Helvetica/Helvetica.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Helvetica/Helvetica.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Helvetica/Helvetica.svg#Helvetica') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Helvetica/Helvetica-Bold.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Helvetica/Helvetica-Bold.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Helvetica/Helvetica-Bold.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Helvetica/Helvetica-Bold.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Helvetica/Helvetica-Bold.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Helvetica/Helvetica-Bold.svg#Helvetica-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kaushan Script';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Kaushan Script/KaushanScript-Regular.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Kaushan Script/KaushanScript-Regular.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Kaushan Script/KaushanScript-Regular.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Kaushan Script/KaushanScript-Regular.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Kaushan Script/KaushanScript-Regular.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Kaushan Script/KaushanScript-Regular.svg#KaushanScript-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat Alternates';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat Alternates/MontserratAlternates-Light.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat Alternates/MontserratAlternates-Light.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat Alternates/MontserratAlternates-Light.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat Alternates/MontserratAlternates-Light.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat Alternates/MontserratAlternates-Light.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat Alternates/MontserratAlternates-Light.svg#MontserratAlternates-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat Alternates';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat Alternates/MontserratAlternates-Bold.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat Alternates/MontserratAlternates-Bold.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat Alternates/MontserratAlternates-Bold.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat Alternates/MontserratAlternates-Bold.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat Alternates/MontserratAlternates-Bold.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat Alternates/MontserratAlternates-Bold.svg#MontserratAlternates-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat Alternates';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat Alternates/MontserratAlternates-Black.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat Alternates/MontserratAlternates-Black.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat Alternates/MontserratAlternates-Black.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat Alternates/MontserratAlternates-Black.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat Alternates/MontserratAlternates-Black.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat Alternates/MontserratAlternates-Black.svg#MontserratAlternates-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat Alternates';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat Alternates/MontserratAlternates-Medium.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat Alternates/MontserratAlternates-Medium.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat Alternates/MontserratAlternates-Medium.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat Alternates/MontserratAlternates-Medium.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat Alternates/MontserratAlternates-Medium.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat Alternates/MontserratAlternates-Medium.svg#MontserratAlternates-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat Alternates';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat Alternates/MontserratAlternates-Regular.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat Alternates/MontserratAlternates-Regular.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat Alternates/MontserratAlternates-Regular.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat Alternates/MontserratAlternates-Regular.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat Alternates/MontserratAlternates-Regular.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat Alternates/MontserratAlternates-Regular.svg#MontserratAlternates-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat Alternates';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat Alternates/MontserratAlternates-SemiBold.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat Alternates/MontserratAlternates-SemiBold.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat Alternates/MontserratAlternates-SemiBold.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat Alternates/MontserratAlternates-SemiBold.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat Alternates/MontserratAlternates-SemiBold.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Montserrat Alternates/MontserratAlternates-SemiBold.svg#MontserratAlternates-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spartan/Spartan-Black.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spartan/Spartan-Black.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spartan/Spartan-Black.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spartan/Spartan-Black.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spartan/Spartan-Black.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spartan/Spartan-Black.svg#Spartan-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spartan/Spartan-Bold.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spartan/Spartan-Bold.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spartan/Spartan-Bold.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spartan/Spartan-Bold.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spartan/Spartan-Bold.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spartan/Spartan-Bold.svg#Spartan-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spartan/Spartan-Light.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spartan/Spartan-Light.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spartan/Spartan-Light.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spartan/Spartan-Light.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spartan/Spartan-Light.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spartan/Spartan-Light.svg#Spartan-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spartan/Spartan-Medium.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spartan/Spartan-Medium.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spartan/Spartan-Medium.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spartan/Spartan-Medium.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spartan/Spartan-Medium.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spartan/Spartan-Medium.svg#Spartan-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spartan/Spartan-SemiBold.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spartan/Spartan-SemiBold.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spartan/Spartan-SemiBold.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spartan/Spartan-SemiBold.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spartan/Spartan-SemiBold.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spartan/Spartan-SemiBold.svg#Spartan-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spartan/Spartan-Regular.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spartan/Spartan-Regular.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spartan/Spartan-Regular.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spartan/Spartan-Regular.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spartan/Spartan-Regular.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spartan/Spartan-Regular.svg#Spartan-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Inter/Inter-Bold.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Inter/Inter-Bold.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Inter/Inter-Bold.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Inter/Inter-Bold.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Inter/Inter-Bold.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Inter/Inter-Bold.svg#Inter-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Inter/Inter-Black.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Inter/Inter-Black.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Inter/Inter-Black.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Inter/Inter-Black.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Inter/Inter-Black.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Inter/Inter-Black.svg#Inter-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Inter/Inter-Light.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Inter/Inter-Light.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Inter/Inter-Light.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Inter/Inter-Light.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Inter/Inter-Light.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Inter/Inter-Light.svg#Inter-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Inter/Inter-Regular.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Inter/Inter-Regular.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Inter/Inter-Regular.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Inter/Inter-Regular.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Inter/Inter-Regular.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Inter/Inter-Regular.svg#Inter-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Inter/Inter-Medium.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Inter/Inter-Medium.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Inter/Inter-Medium.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Inter/Inter-Medium.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Inter/Inter-Medium.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Inter/Inter-Medium.svg#Inter-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Inter/Inter-SemiBold.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Inter/Inter-SemiBold.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Inter/Inter-SemiBold.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Inter/Inter-SemiBold.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Inter/Inter-SemiBold.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Inter/Inter-SemiBold.svg#Inter-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Open-Sans/OpenSans-Regular.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Open-Sans/OpenSans-Regular.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Open-Sans/OpenSans-Regular.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Open-Sans/OpenSans-Regular.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Open-Sans/OpenSans-Regular.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Open-Sans/OpenSans-Regular.svg#OpenSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Emilys Candy';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Emilys-Candy/EmilysCandy-Regular.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Emilys-Candy/EmilysCandy-Regular.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Emilys-Candy/EmilysCandy-Regular.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Emilys-Candy/EmilysCandy-Regular.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Emilys-Candy/EmilysCandy-Regular.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Emilys-Candy/EmilysCandy-Regular.svg#EmilysCandy-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Salsa';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Salsa/Salsa-Regular.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Salsa/Salsa-Regular.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Salsa/Salsa-Regular.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Salsa/Salsa-Regular.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Salsa/Salsa-Regular.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Salsa/Salsa-Regular.svg#Salsa-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mogra';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Mogra/Mogra-Regular.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Mogra/Mogra-Regular.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Mogra/Mogra-Regular.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Mogra/Mogra-Regular.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Mogra/Mogra-Regular.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Mogra/Mogra-Regular.svg#Mogra-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lakki Reddy';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Lakki-Reddy/LakkiReddy.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Lakki-Reddy/LakkiReddy.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Lakki-Reddy/LakkiReddy.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Lakki-Reddy/LakkiReddy.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Lakki-Reddy/LakkiReddy.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Lakki-Reddy/LakkiReddy.svg#LakkiReddy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spontan Medium';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spontan-Medium/Spontan-Medium.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spontan-Medium/Spontan-Medium.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spontan-Medium/Spontan-Medium.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spontan-Medium/Spontan-Medium.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spontan-Medium/Spontan-Medium.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Spontan-Medium/Spontan-Medium.svg#Spontan-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLT';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/HelveticaNeueLT/HelveticaNeueLT-BoldOutline.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/HelveticaNeueLT/HelveticaNeueLT-BoldOutline.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/HelveticaNeueLT/HelveticaNeueLT-BoldOutline.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/HelveticaNeueLT/HelveticaNeueLT-BoldOutline.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/HelveticaNeueLT/HelveticaNeueLT-BoldOutline.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/HelveticaNeueLT/HelveticaNeueLT-BoldOutline.svg#HelveticaNeueLT') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ansylia';
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Ansylia/Ansylia-Regular.eot');
+    src: url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Ansylia/Ansylia-Regular.eot?#iefix') format('embedded-opentype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Ansylia/Ansylia-Regular.woff2') format('woff2'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Ansylia/Ansylia-Regular.woff') format('woff'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Ansylia/Ansylia-Regular.ttf') format('truetype'), url('https://gift-card-pro.s3.eu-central-1.amazonaws.com/fonts/Ansylia/Ansylia-Regular.svg#Ansylia-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

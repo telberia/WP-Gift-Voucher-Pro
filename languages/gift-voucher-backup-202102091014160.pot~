@@ -1,0 +1,1671 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gift Cards Pro\n"
+"POT-Creation-Date: 2020-01-11 14:11+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Language-Team: Codemenschen <gdpr@codemenschen.at>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__;esc_html_e;esc_attr_e\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Poedit-SearchPath-0: admin.php\n"
+"X-Poedit-SearchPath-1: front.php\n"
+"X-Poedit-SearchPath-2: classes\n"
+"X-Poedit-SearchPath-3: include\n"
+"X-Poedit-SearchPath-4: templates\n"
+"X-Poedit-SearchPath-5: gift-voucher-pro.php\n"
+"X-Poedit-SearchPath-6: giftitems.php\n"
+"X-Poedit-SearchPath-7: upgrade.php\n"
+
+#: admin.php:48 admin.php:245 include/voucher_template.php:9
+msgid "Voucher Templates"
+msgstr ""
+
+#: admin.php:49 include/new_voucher_template.php:14
+#: include/voucher_template.php:9
+msgid "Add New Template"
+msgstr ""
+
+#: admin.php:50
+msgid "View Voucher Details"
+msgstr ""
+
+#: admin.php:51 gift-voucher-pro.php:105 include/voucher_settings.php:235
+msgid "Settings"
+msgstr ""
+
+#: admin.php:52 include/add_gift_voucher_order.php:110
+msgid "Add Gift Voucher Order"
+msgstr ""
+
+#: admin.php:53
+msgid "Gift Voucher Orders"
+msgstr ""
+
+#: admin.php:54 admin.php:76 classes/voucher.php:242
+#: include/redeem-voucher.php:52 include/redeem-voucher.php:57
+msgid "Check Voucher Balance"
+msgstr ""
+
+#: admin.php:55 include/wpgv_license_page.php:27
+#: include/wpgv_license_page.php:36
+msgid "Activate License"
+msgstr ""
+
+#: admin.php:55
+msgid "Plugin License"
+msgstr ""
+
+#: admin.php:56
+msgid "Export Order"
+msgstr ""
+
+#: admin.php:57
+msgid "Import Order"
+msgstr ""
+
+#: admin.php:209
+msgid "Invalid Request."
+msgstr ""
+
+#: admin.php:215
+msgid "Export All Orders"
+msgstr ""
+
+#: admin.php:228 include/voucher_posttype.php:11
+msgid "Gift Vouchers"
+msgstr ""
+
+#: classes/EDD_SL_Plugin_Updater.php:228
+#, php-format
+msgid ""
+"There is a new version of %1$s available. %2$sView version %3$s details%4$s."
+msgstr ""
+
+#: classes/EDD_SL_Plugin_Updater.php:236
+#, php-format
+msgid ""
+"There is a new version of %1$s available. %2$sView version %3$s details%4$s "
+"or %5$supdate now%6$s."
+msgstr ""
+
+#: classes/EDD_SL_Plugin_Updater.php:474 classes/WPGV_Plugin_Updater.php:466
+msgid "You do not have permission to install plugin updates"
+msgstr ""
+
+#: classes/EDD_SL_Plugin_Updater.php:474 classes/WPGV_Plugin_Updater.php:466
+msgid "Error"
+msgstr ""
+
+#: classes/WPGV_Plugin_Updater.php:225
+#, php-format
+msgid ""
+"There is a new version of %1$s available. %2$s View version %3$s details "
+"%4$s."
+msgstr ""
+
+#: classes/WPGV_Plugin_Updater.php:233
+#, php-format
+msgid ""
+"There is a new version of %1$s available. %2$s View version %3$s details "
+"%4$s or %5$s update now %6$s."
+msgstr ""
+
+#: classes/class-nag.php:116
+#, php-format
+msgid ""
+"You've been using <b>What The File</b> for some time now, could you please "
+"give it a review at wordpress.org? <br /><br /> <a href='%s' "
+"target='_blank'>Yes, take me there!</a> - <a href='%s'>I've already done "
+"this!</a><br/><br/><small><a href='http://www.never5.com/' "
+"target='_blank'>Check out other Never5 plugins</a></small>"
+msgstr ""
+
+#: classes/page_template.php:72
+msgid "PDF Voucher Viewer"
+msgstr ""
+
+#: classes/page_template.php:73
+msgid "PDF Gift Item Viewer"
+msgstr ""
+
+#: classes/template.php:16
+msgid "Template"
+msgstr ""
+
+#: classes/template.php:17
+msgid "Templates"
+msgstr ""
+
+#: classes/template.php:78
+msgid "No templates yet."
+msgstr ""
+
+#: classes/template.php:113
+msgid "Template ID"
+msgstr ""
+
+#: classes/template.php:114 include/new_voucher_template.php:120
+msgid "Title"
+msgstr ""
+
+#: classes/template.php:115 include/new_voucher_template.php:133
+msgid "Image"
+msgstr ""
+
+#: classes/template.php:116 include/new_voucher_template.php:146
+#: include/view_voucher_details.php:36
+msgid "Status"
+msgstr ""
+
+#: classes/template.php:117
+msgid "Template Date"
+msgstr ""
+
+#: classes/template.php:150 include/new_voucher_template.php:21
+#: include/new_voucher_template.php:22
+msgid "Edit Template"
+msgstr ""
+
+#: classes/template.php:151 classes/template.php:198 classes/voucher.php:478
+msgid "Delete"
+msgstr ""
+
+#: classes/voucher.php:16
+msgid "Voucher Order"
+msgstr ""
+
+#: classes/voucher.php:17 include/voucher_list.php:14
+msgid "Voucher Orders"
+msgstr ""
+
+#: classes/voucher.php:161
+msgid "No purchased voucher codes yet."
+msgstr ""
+
+#: classes/voucher.php:199
+msgid "Order id"
+msgstr ""
+
+#: classes/voucher.php:200 include/view_voucher_details.php:34
+msgid "Voucher Code"
+msgstr ""
+
+#: classes/voucher.php:201 include/view_voucher_details.php:83
+msgid "Voucher Information"
+msgstr ""
+
+#: classes/voucher.php:202
+msgid "Buyer's Information"
+msgstr ""
+
+#: classes/voucher.php:203 include/voucher-shortcodes.php:394
+msgid "Action"
+msgstr ""
+
+#: classes/voucher.php:204
+msgid "Voucher"
+msgstr ""
+
+#: classes/voucher.php:205 include/view_voucher_details.php:35
+#: templates/pdfstyles/receipt.php:51
+msgid "Order Date"
+msgstr ""
+
+#: classes/voucher.php:240
+msgid "View Details"
+msgstr ""
+
+#: classes/voucher.php:241
+msgid "Delete Voucher"
+msgstr ""
+
+#: classes/voucher.php:245
+msgid "Redeem Partial Amount"
+msgstr ""
+
+#: classes/voucher.php:245
+msgid "Add"
+msgstr ""
+
+#: classes/voucher.php:265
+msgid "Remaining Balance:"
+msgstr ""
+
+#: classes/voucher.php:286 front.php:48 giftitems.php:40
+#: include/add_gift_voucher_order.php:42 include/view_voucher_details.php:87
+msgid "Buying For"
+msgstr ""
+
+#: classes/voucher.php:290
+msgid "Buyer Name"
+msgstr ""
+
+#: classes/voucher.php:295 front.php:66 front.php:77 front.php:215
+#: front.php:250 front.php:287 front.php:483 giftitems.php:59 giftitems.php:72
+#: giftitems.php:378 giftitems.php:417 giftitems.php:458
+#: include/add_gift_voucher_order.php:55 include/add_gift_voucher_order.php:69
+#: include/add_gift_voucher_order.php:281 include/view_voucher_details.php:90
+#: templates/pdfstyles/receipt.php:68 templates/pdfstyles/style1.php:56
+#: templates/pdfstyles/style2.php:58 templates/pdfstyles/style3.php:56
+msgid "Recipient Name"
+msgstr ""
+
+#: classes/voucher.php:300 front.php:92 front.php:358 front.php:475
+#: giftitems.php:89 include/add_gift_voucher_order.php:152
+#: include/add_gift_voucher_order.php:273 templates/pdfstyles/style1.php:70
+#: templates/pdfstyles/style2.php:72 templates/pdfstyles/style3.php:70
+msgid "Voucher Value"
+msgstr ""
+
+#: classes/voucher.php:304
+msgid "Voucher Send Time"
+msgstr ""
+
+#: classes/voucher.php:308
+msgid "Additional Charges"
+msgstr ""
+
+#: classes/voucher.php:312
+msgid "Total Payable Amount"
+msgstr ""
+
+#: classes/voucher.php:316 include/view_voucher_details.php:93
+msgid "Message"
+msgstr ""
+
+#: classes/voucher.php:335 front.php:379 front.php:452 front.php:493
+#: giftitems.php:247 giftitems.php:293 include/add_gift_voucher_order.php:174
+#: include/add_gift_voucher_order.php:251
+#: include/add_gift_voucher_order.php:291 include/view_voucher_details.php:112
+msgid "Shipping"
+msgstr ""
+
+#: classes/voucher.php:340
+msgid "Recipient Email"
+msgstr ""
+
+#: classes/voucher.php:344 classes/voucher.php:353
+msgid "Buyer Email"
+msgstr ""
+
+#: classes/voucher.php:349 include/view_voucher_details.php:116
+msgid "Name"
+msgstr ""
+
+#: classes/voucher.php:357 front.php:410 front.php:517 giftitems.php:275
+#: include/add_gift_voucher_order.php:199
+#: include/add_gift_voucher_order.php:312 include/view_voucher_details.php:118
+msgid "Address"
+msgstr ""
+
+#: classes/voucher.php:361 front.php:414 front.php:521 giftitems.php:276
+#: include/add_gift_voucher_order.php:203
+#: include/add_gift_voucher_order.php:316 include/view_voucher_details.php:119
+msgid "Postcode"
+msgstr ""
+
+#: classes/voucher.php:365 include/view_voucher_details.php:120
+msgid "Shipping Method"
+msgstr ""
+
+#: classes/voucher.php:370 front.php:180 front.php:439 front.php:529
+#: giftitems.php:125 giftitems.php:309 giftitems.php:348
+#: include/view_voucher_details.php:122 templates/pdfstyles/receipt.php:109
+msgid "Payment Method"
+msgstr ""
+
+#: classes/voucher.php:375
+msgid "Stripe Session ID"
+msgstr ""
+
+#: classes/voucher.php:379
+msgid "Stripe Publishable Key"
+msgstr ""
+
+#: classes/voucher.php:384
+msgid "PayPal PaymentID"
+msgstr ""
+
+#: classes/voucher.php:388
+msgid "PayPal Mode"
+msgstr ""
+
+#: classes/voucher.php:393 templates/pdfstyles/receipt.php:117
+msgid "Payment Status"
+msgstr ""
+
+#: classes/voucher.php:397
+msgid "Expiry"
+msgstr ""
+
+#: classes/voucher.php:416 classes/voucher.php:476
+msgid "Mark as Used"
+msgstr ""
+
+#: classes/voucher.php:420 include/view_voucher_details.php:43
+msgid "Voucher Used"
+msgstr ""
+
+#: classes/voucher.php:426 classes/voucher.php:477
+msgid "Mark as Paid"
+msgstr ""
+
+#: classes/voucher.php:430 include/voucher-shortcodes.php:34
+#: include/voucher-shortcodes.php:256 templates/pdfstyles/receipt.php:120
+msgid "Paid"
+msgstr ""
+
+#: classes/voucher.php:575
+msgid "Order Details"
+msgstr ""
+
+#: classes/wpgv-gift-voucher-activity.php:55
+#, php-format
+msgid "Could not find activity record %d."
+msgstr ""
+
+#: classes/wpgv-gift-voucher-activity.php:67
+msgid "Invalid action value: "
+msgstr ""
+
+#: classes/wpgv-gift-voucher.php:49
+msgid "Gift Voucher does not exist."
+msgstr ""
+
+#: classes/wpgv-gift-voucher.php:52
+msgid "Enter a card number."
+msgstr ""
+
+#: classes/wpgv-gift-voucher.php:111
+msgid "Amount added should be greater than zero."
+msgstr ""
+
+#: classes/wpgv-gift-voucher.php:119
+msgid "Amount deducted should be less than zero."
+msgstr ""
+
+#: classes/wpgv-gift-voucher.php:128
+msgid "Unable to adjust balance, card is not active."
+msgstr ""
+
+#: classes/wpgv-gift-voucher.php:132
+#, php-format
+msgid "Balance is currently %s, unable to adjust by %s"
+msgstr ""
+
+#: classes/wpgv-gift-voucher.php:190
+msgid "Card Number cannot be empty."
+msgstr ""
+
+#: classes/wpgv-gift-voucher.php:222
+#, php-format
+msgid "Failed to generate a unique random card number after %d attempts. %s"
+msgstr ""
+
+#: classes/wpgv-gift-voucher.php:250
+#, php-format
+msgid "Property %s does not exist on %s"
+msgstr ""
+
+#: front.php:52 giftitems.php:44
+msgid "Someone Else"
+msgstr ""
+
+#: front.php:56 giftitems.php:48
+msgid "Yourself"
+msgstr ""
+
+#: front.php:62 front.php:73 front.php:83 front.php:211 front.php:246
+#: front.php:283 front.php:446 front.php:479 giftitems.php:54 giftitems.php:67
+#: giftitems.php:79 giftitems.php:287 giftitems.php:339 giftitems.php:374
+#: giftitems.php:413 giftitems.php:454 include/add_gift_voucher_order.php:51
+#: include/add_gift_voucher_order.php:65 include/add_gift_voucher_order.php:77
+#: include/add_gift_voucher_order.php:245
+#: include/add_gift_voucher_order.php:277 include/view_voucher_details.php:88
+#: templates/pdfstyles/receipt.php:59 templates/pdfstyles/style1.php:43
+#: templates/pdfstyles/style2.php:45 templates/pdfstyles/style3.php:43
+msgid "Your Name"
+msgstr ""
+
+#: front.php:100 front.php:505
+msgid "When do you want to send a gift voucher?"
+msgstr ""
+
+#: front.php:102 front.php:506
+msgid "Send instantly"
+msgstr ""
+
+#: front.php:103
+msgid "Send on a future date"
+msgstr ""
+
+#: front.php:107
+msgid "Select date and time"
+msgstr ""
+
+#: front.php:110
+msgid "Add date and time"
+msgstr ""
+
+#: front.php:111
+msgid "Remove date and time"
+msgstr ""
+
+#: front.php:120 include/add_gift_voucher_order.php:84
+#, php-format
+msgid "(Min Voucher Value %s)"
+msgstr ""
+
+#: front.php:173 include/add_gift_voucher_order.php:25
+msgid "Choose Voucher Style"
+msgstr ""
+
+#: front.php:175 giftitems.php:120 include/add_gift_voucher_order.php:28
+msgid "Style"
+msgstr ""
+
+#: front.php:184 giftitems.php:131
+msgid "Sofort"
+msgstr ""
+
+#: front.php:187 giftitems.php:132
+msgid "Per Invoice"
+msgstr ""
+
+#: front.php:197 giftitems.php:110 include/add_gift_voucher_order.php:93
+#: include/admin_wpgv_voucher_pdf.php:43 include/import_voucher_order.php:74
+#: include/wpgv_item_pdf.php:55 include/wpgv_voucher_pdf.php:54
+#: templates/wpgv_item_pdf.php:38
+msgid "No Expiry"
+msgstr ""
+
+#: front.php:208 front.php:244 front.php:277
+#: templates/woocommerce/cart/wpgv-gift-vouchers.php:25
+#: templates/woocommerce/checkout/wpgv-gift-vouchers.php:25
+msgid "Gift Voucher"
+msgstr ""
+
+#: front.php:220 front.php:257 front.php:294 front.php:487 giftitems.php:383
+#: giftitems.php:424 giftitems.php:465 include/add_gift_voucher_order.php:285
+#: templates/pdfstyles/style1.php:95 templates/pdfstyles/style2.php:85
+#: templates/pdfstyles/style3.php:83
+msgid "Personal Message"
+msgstr ""
+
+#: front.php:224 front.php:261 front.php:298 giftitems.php:387
+#: giftitems.php:428 giftitems.php:469 templates/pdfstyles/style1.php:83
+#: templates/pdfstyles/style2.php:99 templates/pdfstyles/style3.php:97
+msgid "Date of Expiry"
+msgstr ""
+
+#: front.php:228 front.php:265 front.php:302 giftitems.php:391
+#: giftitems.php:432 giftitems.php:473 templates/pdfstyles/receipt.php:93
+#: templates/pdfstyles/style1.php:109 templates/pdfstyles/style2.php:110
+#: templates/pdfstyles/style3.php:108
+msgid "Coupon Code"
+msgstr ""
+
+#: front.php:233 front.php:270 front.php:307 giftitems.php:396
+#: giftitems.php:437 giftitems.php:478 templates/pdfstyles/style1.php:135
+#: templates/pdfstyles/style2.php:135 templates/pdfstyles/style3.php:133
+msgid "Cash payment is not possible. The terms and conditions apply."
+msgstr ""
+
+#: front.php:338 front.php:340
+msgid "Select Templates"
+msgstr ""
+
+#: front.php:349 front.php:351
+msgid "Personalize"
+msgstr ""
+
+#: front.php:363 giftitems.php:231 include/add_gift_voucher_order.php:159
+msgid "Personal Message (Optional)"
+msgstr ""
+
+#: front.php:363 giftitems.php:231 include/add_gift_voucher_order.php:159
+msgid "Max: 250 Characters"
+msgstr ""
+
+#: front.php:372 front.php:374
+msgid "Payment"
+msgstr ""
+
+#: front.php:383 giftitems.php:251 include/view_voucher_details.php:114
+#: include/view_voucher_details.php:117 templates/pdfstyles/receipt.php:77
+msgid "Email"
+msgstr ""
+
+#: front.php:387 giftitems.php:255
+msgid "Post"
+msgstr ""
+
+#: front.php:393 front.php:425 front.php:497 giftitems.php:261
+#: giftitems.php:325
+msgid "Send the voucher to recipient email here"
+msgstr ""
+
+#: front.php:397 front.php:429 front.php:501 giftitems.php:266
+#: giftitems.php:330 include/add_gift_voucher_order.php:186
+#: include/add_gift_voucher_order.php:234
+#: include/add_gift_voucher_order.php:299
+msgid "Your email address (for the receipt)"
+msgstr ""
+
+#: front.php:402 front.php:509 giftitems.php:273
+#: include/add_gift_voucher_order.php:191
+#: include/add_gift_voucher_order.php:304
+msgid "First Name"
+msgstr ""
+
+#: front.php:406 front.php:513 giftitems.php:274
+#: include/add_gift_voucher_order.php:195
+#: include/add_gift_voucher_order.php:308
+msgid "Last Name"
+msgstr ""
+
+#: front.php:418 front.php:525 giftitems.php:279
+#: include/add_gift_voucher_order.php:320
+msgid "Shipping method"
+msgstr ""
+
+#: front.php:442 giftitems.php:283 giftitems.php:335
+#: include/add_gift_voucher_order.php:241
+msgid "Your Order"
+msgstr ""
+
+#: front.php:459 giftitems.php:300 include/add_gift_voucher_order.php:258
+msgid "Total"
+msgstr ""
+
+#: front.php:469 front.php:471
+msgid "Overview"
+msgstr ""
+
+#: front.php:494 gift-voucher-pro.php:128
+msgid "Shipping via Email"
+msgstr ""
+
+#: front.php:537 giftitems.php:317 giftitems.php:356
+msgid "Pay Now"
+msgstr ""
+
+#: front.php:542 giftitems.php:305 giftitems.php:344
+msgid "Show Preview as PDF"
+msgstr ""
+
+#: gift-voucher-pro.php:106
+msgid "Documentation"
+msgstr ""
+
+#: gift-voucher-pro.php:118
+msgid "This email must be different from above email."
+msgstr ""
+
+#: gift-voucher-pro.php:119
+msgid "Please select voucher template"
+msgstr ""
+
+#: gift-voucher-pro.php:120
+msgid "Please accept the terms and conditions"
+msgstr ""
+
+#: gift-voucher-pro.php:121
+msgid "Finish"
+msgstr ""
+
+#: gift-voucher-pro.php:122 giftitems.php:237
+msgid "Continue"
+msgstr ""
+
+#: gift-voucher-pro.php:123 giftitems.php:238 giftitems.php:318
+#: giftitems.php:357
+msgid "Back"
+msgstr ""
+
+#: gift-voucher-pro.php:124
+msgid "Submitted!"
+msgstr ""
+
+#: gift-voucher-pro.php:125
+msgid "Error occurred"
+msgstr ""
+
+#: gift-voucher-pro.php:126
+msgid "Total Characters"
+msgstr ""
+
+#: gift-voucher-pro.php:127
+msgid "Shipping via Post"
+msgstr ""
+
+#: gift-voucher-pro.php:129
+msgid "Please check email address."
+msgstr ""
+
+#: gift-voucher-pro.php:130
+msgid "This field is required."
+msgstr ""
+
+#: gift-voucher-pro.php:131
+msgid "Please fix this field."
+msgstr ""
+
+#: gift-voucher-pro.php:132
+msgid "Please enter no more than {0} characters."
+msgstr ""
+
+#: gift-voucher-pro.php:133
+msgid "Please enter a valid email address."
+msgstr ""
+
+#: gift-voucher-pro.php:134
+msgid "Please enter a value less than or equal to {0}."
+msgstr ""
+
+#: gift-voucher-pro.php:135
+msgid "Please enter a value greater than or equal to {0}."
+msgstr ""
+
+#: giftitems.php:55 giftitems.php:68 giftitems.php:80
+msgid "Your name is required"
+msgstr ""
+
+#: giftitems.php:60 giftitems.php:73
+msgid "Recipient name is required"
+msgstr ""
+
+#: giftitems.php:211
+msgid "Buy"
+msgstr ""
+
+#: giftitems.php:232
+msgid "Please enter no more than 250 characters."
+msgstr ""
+
+#: giftitems.php:262 giftitems.php:326
+msgid "Required"
+msgstr ""
+
+#: giftitems.php:267 giftitems.php:331
+msgid "Your email address is required"
+msgstr ""
+
+#: giftitems.php:268
+msgid "This email must be be different from above email."
+msgstr ""
+
+#: giftitems.php:272
+msgid "Shipping address"
+msgstr ""
+
+#: giftitems.php:399 giftitems.php:440 giftitems.php:481
+msgid "Voucher Preview"
+msgstr ""
+
+#: include/add_gift_voucher_order.php:104
+msgid "Gift Voucher Order Successfully Added..."
+msgstr ""
+
+#: include/add_gift_voucher_order.php:182
+#: include/add_gift_voucher_order.php:230
+#: include/add_gift_voucher_order.php:295
+msgid "What email address should we send it to?"
+msgstr ""
+
+#: include/add_gift_voucher_order.php:328
+msgid "Confirm Order"
+msgstr ""
+
+#: include/new_voucher_template.php:15
+msgid "Add Template"
+msgstr ""
+
+#: include/new_voucher_template.php:48
+msgid "Template Updated Successfully!"
+msgstr ""
+
+#: include/new_voucher_template.php:77
+msgid "Template Added Successfully!"
+msgstr ""
+
+#: include/new_voucher_template.php:139 include/voucher_metabox.php:212
+msgid "Upload Image"
+msgstr ""
+
+#: include/new_voucher_template.php:140 include/voucher_metabox.php:45
+#: include/voucher_metabox.php:79 include/voucher_metabox.php:213
+msgid "Remove Image"
+msgstr ""
+
+#: include/new_voucher_template.php:150
+msgid "Active"
+msgstr ""
+
+#: include/new_voucher_template.php:151
+msgid "Inactive"
+msgstr ""
+
+#: include/redeem-voucher.php:268
+#, php-format
+msgid "Shipping via %s"
+msgstr ""
+
+#: include/redeem-voucher.php:284
+msgid "Gift card applied."
+msgstr ""
+
+#: include/redeem-voucher.php:298
+msgid "Gift card removed."
+msgstr ""
+
+#: include/redeem-voucher.php:324
+msgid "Your voucher has expired."
+msgstr ""
+
+#: include/redeem-voucher.php:327
+msgid "This gift voucher has a zero balance."
+msgstr ""
+
+#: include/view_voucher_details.php:29
+msgid "Voucher Order ID"
+msgstr ""
+
+#: include/view_voucher_details.php:30
+msgid "Here you can find detailed information for a voucher code."
+msgstr ""
+
+#: include/view_voucher_details.php:37
+msgid "See Receipt (PDF)"
+msgstr ""
+
+#: include/view_voucher_details.php:43
+msgid "Unused"
+msgstr ""
+
+#: include/view_voucher_details.php:49
+msgid "Template Information"
+msgstr ""
+
+#: include/view_voucher_details.php:53
+msgid "Template Name"
+msgstr ""
+
+#: include/view_voucher_details.php:54
+msgid "Template Image"
+msgstr ""
+
+#: include/view_voucher_details.php:65
+msgid "Item Information"
+msgstr ""
+
+#: include/view_voucher_details.php:69
+msgid "Item Name"
+msgstr ""
+
+#: include/view_voucher_details.php:70
+msgid "Item Description"
+msgstr ""
+
+#: include/view_voucher_details.php:71
+msgid "Item Image"
+msgstr ""
+
+#: include/view_voucher_details.php:92 include/voucher-shortcodes.php:396
+#: templates/pdfstyles/receipt.php:85
+msgid "Amount"
+msgstr ""
+
+#: include/view_voucher_details.php:108
+msgid "Buyers Information"
+msgstr ""
+
+#: include/view_voucher_details.php:123
+msgid "Transaction ID"
+msgstr ""
+
+#: include/view_voucher_details.php:124
+msgid "Expiry Date"
+msgstr ""
+
+#: include/view_voucher_details.php:152
+msgid "Back to Vouchers List"
+msgstr ""
+
+#: include/voucher-shortcodes.php:25 include/voucher-shortcodes.php:176
+#: include/voucher-shortcodes.php:211
+msgid "This URL is invalid. You can not access this page directly."
+msgstr ""
+
+#: include/voucher-shortcodes.php:173 include/voucher-shortcodes.php:345
+msgid ""
+"Some Error Occurred From Sending this Email! <br>(Reload and Retry Again!) "
+"or Contact Us"
+msgstr ""
+
+#: include/voucher-shortcodes.php:259
+msgid "Stripe"
+msgstr ""
+
+#: include/voucher-shortcodes.php:348
+msgid "Transaction has been failed"
+msgstr ""
+
+#: include/voucher-shortcodes.php:351
+msgid "Transaction has been failed!"
+msgstr ""
+
+#: include/voucher-shortcodes.php:367
+msgid "Search by Gift voucher code"
+msgstr ""
+
+#: include/voucher-shortcodes.php:368
+msgid "Check Balance"
+msgstr ""
+
+#: include/voucher-shortcodes.php:389
+msgid "Current Voucher Balance:"
+msgstr ""
+
+#: include/voucher-shortcodes.php:393
+msgid "Date"
+msgstr ""
+
+#: include/voucher-shortcodes.php:395
+msgid "Note"
+msgstr ""
+
+#: include/voucher-shortcodes.php:397
+msgid "Balance"
+msgstr ""
+
+#: include/voucher-shortcodes.php:430
+msgid "This is a invalid voucher code."
+msgstr ""
+
+#: include/voucher_list.php:30
+msgid "Unused Gift Vouchers"
+msgstr ""
+
+#: include/voucher_list.php:33
+msgid "Total Unused Voucher Amount"
+msgstr ""
+
+#: include/voucher_list.php:45 include/voucher_list.php:50
+msgid "Import Vouchers"
+msgstr ""
+
+#: include/voucher_list.php:47
+msgid "Purchased Voucher Codes"
+msgstr ""
+
+#: include/voucher_list.php:48
+msgid "Purchased Items"
+msgstr ""
+
+#: include/voucher_list.php:49
+msgid "Add New Gift Voucher Order"
+msgstr ""
+
+#: include/voucher_list.php:51
+msgid "Export Vouchers"
+msgstr ""
+
+#: include/voucher_metabox.php:40 include/voucher_metabox.php:67
+#: include/voucher_posttype.php:27
+msgid "Featured Image"
+msgstr ""
+
+#: include/voucher_metabox.php:44 include/voucher_metabox.php:78
+msgid "Add Image"
+msgstr ""
+
+#: include/voucher_metabox.php:106
+msgid "Insert"
+msgstr ""
+
+#: include/voucher_metabox.php:154
+msgid "Item Details"
+msgstr ""
+
+#: include/voucher_metabox.php:188
+msgid "Description"
+msgstr ""
+
+#: include/voucher_metabox.php:189
+msgid "Item Price"
+msgstr ""
+
+#: include/voucher_metabox.php:190
+msgid "Item Special Price"
+msgstr ""
+
+#: include/voucher_posttype.php:9
+msgid "Gift Items"
+msgstr ""
+
+#: include/voucher_posttype.php:10 include/voucher_posttype.php:12
+#: include/voucher_posttype.php:38
+msgid "Item"
+msgstr ""
+
+#: include/voucher_posttype.php:13
+msgid "Item Archives"
+msgstr ""
+
+#: include/voucher_posttype.php:14
+msgid "Item Attributes"
+msgstr ""
+
+#: include/voucher_posttype.php:15
+msgid "Parent Item:"
+msgstr ""
+
+#: include/voucher_posttype.php:16
+msgid "All Gift Items"
+msgstr ""
+
+#: include/voucher_posttype.php:17 include/voucher_posttype.php:18
+msgid "Add New Item"
+msgstr ""
+
+#: include/voucher_posttype.php:19
+msgid "New Item"
+msgstr ""
+
+#: include/voucher_posttype.php:20
+msgid "Edit Item"
+msgstr ""
+
+#: include/voucher_posttype.php:21
+msgid "Update Item"
+msgstr ""
+
+#: include/voucher_posttype.php:22
+msgid "View Item"
+msgstr ""
+
+#: include/voucher_posttype.php:23
+msgid "View Items"
+msgstr ""
+
+#: include/voucher_posttype.php:24
+msgid "Search Item"
+msgstr ""
+
+#: include/voucher_posttype.php:25
+msgid "Not found"
+msgstr ""
+
+#: include/voucher_posttype.php:26
+msgid "Not found in Trash"
+msgstr ""
+
+#: include/voucher_posttype.php:28
+msgid "Set Item image"
+msgstr ""
+
+#: include/voucher_posttype.php:29
+msgid "Remove featured image"
+msgstr ""
+
+#: include/voucher_posttype.php:30
+msgid "Use as featured image"
+msgstr ""
+
+#: include/voucher_posttype.php:31
+msgid "Insert into Item"
+msgstr ""
+
+#: include/voucher_posttype.php:32
+msgid "Uploaded to this Item"
+msgstr ""
+
+#: include/voucher_posttype.php:33
+msgid "Items list"
+msgstr ""
+
+#: include/voucher_posttype.php:34
+msgid "Items list navigation"
+msgstr ""
+
+#: include/voucher_posttype.php:35
+msgid "Filter Items list"
+msgstr ""
+
+#: include/voucher_posttype.php:39
+msgid "Create your store Items as a product"
+msgstr ""
+
+#: include/voucher_posttype.php:67
+msgid "Item Categories"
+msgstr ""
+
+#: include/voucher_posttype.php:68 include/voucher_posttype.php:69
+msgid "Item Category"
+msgstr ""
+
+#: include/voucher_posttype.php:70
+msgid "All Item Categories"
+msgstr ""
+
+#: include/voucher_posttype.php:71
+msgid "Parent Category"
+msgstr ""
+
+#: include/voucher_posttype.php:72
+msgid "Parent Category:"
+msgstr ""
+
+#: include/voucher_posttype.php:73
+msgid "New Category Name"
+msgstr ""
+
+#: include/voucher_posttype.php:74
+msgid "Add New Category"
+msgstr ""
+
+#: include/voucher_posttype.php:75
+msgid "Edit Category"
+msgstr ""
+
+#: include/voucher_posttype.php:76
+msgid "Update Category"
+msgstr ""
+
+#: include/voucher_posttype.php:77
+msgid "View Category"
+msgstr ""
+
+#: include/voucher_posttype.php:78
+msgid "Separate Categories with commas"
+msgstr ""
+
+#: include/voucher_posttype.php:79
+msgid "Add or remove Categories"
+msgstr ""
+
+#: include/voucher_posttype.php:80
+msgid "Choose from the most used"
+msgstr ""
+
+#: include/voucher_posttype.php:81
+msgid "Popular Categories"
+msgstr ""
+
+#: include/voucher_posttype.php:82
+msgid "Search Categories"
+msgstr ""
+
+#: include/voucher_posttype.php:83
+msgid "Not Found"
+msgstr ""
+
+#: include/voucher_posttype.php:84
+msgid "No Categories"
+msgstr ""
+
+#: include/voucher_posttype.php:85
+msgid "Categories list"
+msgstr ""
+
+#: include/voucher_posttype.php:86
+msgid "Categories list navigation"
+msgstr ""
+
+#: include/voucher_settings.php:173
+msgid "Your Settings Saved Successfully."
+msgstr ""
+
+#: include/voucher_settings.php:221
+msgid "Pages Created"
+msgstr ""
+
+#: include/voucher_settings.php:222
+msgid "Created total 6 plugin pages. These pages can be viewed in Pages Menu:"
+msgstr ""
+
+#: include/voucher_settings.php:243 include/voucher_settings.php:254
+msgid "General Settings"
+msgstr ""
+
+#: include/voucher_settings.php:244 include/voucher_settings.php:595
+msgid "Payment Settings"
+msgstr ""
+
+#: include/voucher_settings.php:245 include/voucher_settings.php:807
+msgid "Email Settings"
+msgstr ""
+
+#: include/voucher_settings.php:246 include/voucher_settings.php:911
+msgid "Custom CSS"
+msgstr ""
+
+#: include/voucher_settings.php:257
+msgid "WooCommerce"
+msgstr ""
+
+#: include/voucher_settings.php:269
+msgid "Can customers choose voucher styles?"
+msgstr ""
+
+#: include/voucher_settings.php:281
+msgid "Voucher Style"
+msgstr ""
+
+#: include/voucher_settings.php:294 templates/pdfstyles/receipt.php:19
+msgid "Company Name"
+msgstr ""
+
+#: include/voucher_settings.php:302
+msgid "Currency Code"
+msgstr ""
+
+#: include/voucher_settings.php:311
+msgid "Currency Symbol"
+msgstr ""
+
+#: include/voucher_settings.php:319
+msgid "Currency Position"
+msgstr ""
+
+#: include/voucher_settings.php:330
+msgid "Voucher Background Color"
+msgstr ""
+
+#: include/voucher_settings.php:338
+msgid "Voucher Text Color"
+msgstr ""
+
+#: include/voucher_settings.php:346
+msgid "Templates Columns"
+msgstr ""
+
+#: include/voucher_settings.php:347
+msgid "How many templates show in a row. (Gift Voucher Shortcode)"
+msgstr ""
+
+#: include/voucher_settings.php:358
+msgid "Minimum Voucher Value"
+msgstr ""
+
+#: include/voucher_settings.php:359
+msgid "Leave 0 if no minimum value"
+msgstr ""
+
+#: include/voucher_settings.php:367
+msgid "Maximum Voucher Value"
+msgstr ""
+
+#: include/voucher_settings.php:375
+msgid "Additional Charges Text"
+msgstr ""
+
+#: include/voucher_settings.php:376 include/voucher_settings.php:610
+#: include/voucher_settings.php:659 include/voucher_settings.php:725
+msgid "This will show on frontend Form"
+msgstr ""
+
+#: include/voucher_settings.php:384
+msgid "Add extra charges on every voucher"
+msgstr ""
+
+#: include/voucher_settings.php:385
+msgid "Leave 0 to disable this"
+msgstr ""
+
+#: include/voucher_settings.php:393
+msgid "Enable Barcode on PDF Voucher"
+msgstr ""
+
+#: include/voucher_settings.php:403
+msgid "Add expiry in voucher"
+msgstr ""
+
+#: include/voucher_settings.php:414
+msgid "Voucher Expiry Type"
+msgstr ""
+
+#: include/voucher_settings.php:415
+msgid "Select the type of voucher expiration?"
+msgstr ""
+
+#: include/voucher_settings.php:426
+msgid "Voucher Expiry Value"
+msgstr ""
+
+#: include/voucher_settings.php:427
+msgid "Example: (Days: 60, Fixed Date: 20.05.2018)"
+msgstr ""
+
+#: include/voucher_settings.php:435
+msgid "Expiry date format"
+msgstr ""
+
+#: include/voucher_settings.php:444
+msgid "Terms and Condition Checkbox Text"
+msgstr ""
+
+#: include/voucher_settings.php:452
+msgid "Voucher Terms Note"
+msgstr ""
+
+#: include/voucher_settings.php:453
+msgid "Terms note in voucher order page"
+msgstr ""
+
+#: include/voucher_settings.php:461
+msgid "Buying for"
+msgstr ""
+
+#: include/voucher_settings.php:473
+msgid "Hide price from voucher"
+msgstr ""
+
+#: include/voucher_settings.php:484
+msgid "Allow Future Date"
+msgstr ""
+
+#: include/voucher_settings.php:495
+msgid "Post Shipping"
+msgstr ""
+
+#: include/voucher_settings.php:506
+msgid "Shipping Method for Post Shipping"
+msgstr ""
+
+#: include/voucher_settings.php:511
+msgid "Multiple methods seperate by comma(,)"
+msgstr ""
+
+#: include/voucher_settings.php:516
+msgid "Voucher preview Button"
+msgstr ""
+
+#: include/voucher_settings.php:528
+msgid "Change PDF Save Option"
+msgstr ""
+
+#: include/voucher_settings.php:540
+msgid "Add Your Custom Demo Image"
+msgstr ""
+
+#: include/voucher_settings.php:549
+msgid "Add Your Custom Loader URL"
+msgstr ""
+
+#: include/voucher_settings.php:558
+msgid "Successful Page Message"
+msgstr ""
+
+#: include/voucher_settings.php:559
+msgid "Message appear after payment successful."
+msgstr ""
+
+#: include/voucher_settings.php:563
+msgid "Display the email address of the customer"
+msgstr ""
+
+#: include/voucher_settings.php:568
+msgid "Order Cancellation Message"
+msgstr ""
+
+#: include/voucher_settings.php:569
+msgid "Message appear after order cancelled"
+msgstr ""
+
+#: include/voucher_settings.php:577
+msgid "Website URL on PDF in Footer"
+msgstr ""
+
+#: include/voucher_settings.php:585
+msgid "Email on PDF in Footer"
+msgstr ""
+
+#: include/voucher_settings.php:598
+msgid "Paypal Enable"
+msgstr ""
+
+#: include/voucher_settings.php:609
+msgid "PayPal Text"
+msgstr ""
+
+#: include/voucher_settings.php:618
+msgid "Paypal Testmode"
+msgstr ""
+
+#: include/voucher_settings.php:629
+msgid "PayPal Client ID"
+msgstr ""
+
+#: include/voucher_settings.php:630
+msgid "Read the documentation of how to create PayPal live client ID."
+msgstr ""
+
+#: include/voucher_settings.php:638
+msgid "PayPal Secret Key"
+msgstr ""
+
+#: include/voucher_settings.php:647
+msgid "Stripe Enable"
+msgstr ""
+
+#: include/voucher_settings.php:658
+msgid "Stripe Text"
+msgstr ""
+
+#: include/voucher_settings.php:667
+msgid "Stripe Publishable key"
+msgstr ""
+
+#: include/voucher_settings.php:668
+msgid "Collect the Publishable API key from below link."
+msgstr ""
+
+#: include/voucher_settings.php:676
+msgid "Stripe Secret Key"
+msgstr ""
+
+#: include/voucher_settings.php:677
+msgid "Collect the Secret API key from below link."
+msgstr ""
+
+#: include/voucher_settings.php:685
+msgid "Stripe Webhook URL"
+msgstr ""
+
+#: include/voucher_settings.php:689
+msgid "Copy this url and paste in Stripe Webhook Endpoint URL."
+msgstr ""
+
+#: include/voucher_settings.php:694
+msgid "Stripe Webhook Signing secret key"
+msgstr ""
+
+#: include/voucher_settings.php:695
+msgid "Collect the Webhook Signing secret key from below link."
+msgstr ""
+
+#: include/voucher_settings.php:703
+msgid "Stripe Checkout Page"
+msgstr ""
+
+#: include/voucher_settings.php:707
+msgid ""
+"This page is automatically created for you when you enable stripe payment "
+"method."
+msgstr ""
+
+#: include/voucher_settings.php:713
+msgid "MultiSafepay Enable"
+msgstr ""
+
+#: include/voucher_settings.php:724
+msgid "MultiSafepay Text"
+msgstr ""
+
+#: include/voucher_settings.php:733
+msgid "MultiSafepay Testmode"
+msgstr ""
+
+#: include/voucher_settings.php:744
+msgid "MultiSafepay API"
+msgstr ""
+
+#: include/voucher_settings.php:753
+msgid "Sofort Enable"
+msgstr ""
+
+#: include/voucher_settings.php:764
+msgid "Sofort Configuration Key"
+msgstr ""
+
+#: include/voucher_settings.php:765
+msgid ""
+"Enter your configuration key. you only can create a new configuration key by "
+"creating a new Gateway project in your account at sofort.com."
+msgstr ""
+
+#: include/voucher_settings.php:769
+msgid "This key is used for Sofort Payment."
+msgstr ""
+
+#: include/voucher_settings.php:774
+msgid "Reason for Payment"
+msgstr ""
+
+#: include/voucher_settings.php:775
+msgid "Reason for payment from Sofort."
+msgstr ""
+
+#: include/voucher_settings.php:784
+msgid "Bank Transfer Enable"
+msgstr ""
+
+#: include/voucher_settings.php:785
+msgid ""
+"With this payment method user don't have to pay immediately, They can "
+"directly transfer amount to your bank."
+msgstr ""
+
+#: include/voucher_settings.php:796
+msgid "Bank Details"
+msgstr ""
+
+#: include/voucher_settings.php:797
+msgid "This details will show to user who would pay as Bank Transfer."
+msgstr ""
+
+#: include/voucher_settings.php:810
+msgid "Sender Name"
+msgstr ""
+
+#: include/voucher_settings.php:811 include/voucher_settings.php:820
+msgid "For emails send by this plugin."
+msgstr ""
+
+#: include/voucher_settings.php:819
+msgid "Sender Email"
+msgstr ""
+
+#: include/voucher_settings.php:828
+msgid "Send Customer Receipt"
+msgstr ""
+
+#: include/voucher_settings.php:839
+msgid "Buyer Email Subject"
+msgstr ""
+
+#: include/voucher_settings.php:840 include/voucher_settings.php:890
+msgid "Subject for emails send to customers."
+msgstr ""
+
+#: include/voucher_settings.php:849
+msgid "Buyer Email Body"
+msgstr ""
+
+#: include/voucher_settings.php:850 include/voucher_settings.php:900
+msgid "Body message for emails send to customers."
+msgstr ""
+
+#: include/voucher_settings.php:859
+msgid "Buyer Email Body for Bank Transfer"
+msgstr ""
+
+#: include/voucher_settings.php:860
+msgid ""
+"This email body is used when customer select payment as per bank transfer."
+msgstr ""
+
+#: include/voucher_settings.php:869
+msgid "Recipient Email Subject"
+msgstr ""
+
+#: include/voucher_settings.php:870
+msgid "Subject for emails send to recipient."
+msgstr ""
+
+#: include/voucher_settings.php:879
+msgid "Recipient Email Body"
+msgstr ""
+
+#: include/voucher_settings.php:880
+msgid "Body message for emails send to recipient."
+msgstr ""
+
+#: include/voucher_settings.php:889
+msgid "Admin Email Subject"
+msgstr ""
+
+#: include/voucher_settings.php:899
+msgid "Admin Email Body"
+msgstr ""
+
+#: include/voucher_settings.php:919
+msgid "Save Settings"
+msgstr ""
+
+#: include/wpgv_item_pdf.php:61 include/wpgv_voucher_pdf.php:60
+msgid "Error Occurred - Please check the amount and try again."
+msgstr ""
+
+#: include/wpgv_item_pdf.php:61 include/wpgv_voucher_pdf.php:60
+msgid "Load Page Again"
+msgstr ""
+
+#: include/wpgv_license_page.php:7
+msgid "Plugin License Options"
+msgstr ""
+
+#: include/wpgv_license_page.php:17
+msgid "License Key"
+msgstr ""
+
+#: include/wpgv_license_page.php:21
+msgid "Enter your license key"
+msgstr ""
+
+#: include/wpgv_license_page.php:31
+msgid "active"
+msgstr ""
+
+#: include/wpgv_license_page.php:33
+msgid "Deactivate License"
+msgstr ""
+
+#: templates/pdfstyles/receipt.php:12
+msgid "Customer Receipt"
+msgstr ""
+
+#: templates/pdfstyles/receipt.php:27
+msgid "Company Email"
+msgstr ""
+
+#: templates/pdfstyles/receipt.php:35
+msgid "Company Website"
+msgstr ""
+
+#: templates/pdfstyles/receipt.php:43
+msgid "Order Number"
+msgstr ""
+
+#: templates/pdfstyles/receipt.php:46
+msgid " #"
+msgstr ""
+
+#: templates/pdfstyles/receipt.php:101
+msgid "Coupon Expiry date"
+msgstr ""
+
+#: templates/woocommerce/cart/wpgv-gift-voucher-form.php:14
+msgid "Gift Card:"
+msgstr ""
+
+#: templates/woocommerce/cart/wpgv-gift-voucher-form.php:15
+#: templates/woocommerce/checkout/wpgv-gift-voucher-form.php:15
+msgid "Gift voucher code"
+msgstr ""
+
+#: templates/woocommerce/cart/wpgv-gift-voucher-form.php:16
+#: templates/woocommerce/checkout/wpgv-gift-voucher-form.php:19
+msgid "Apply gift card"
+msgstr ""
+
+#: templates/woocommerce/cart/wpgv-gift-voucher-form.php:16
+#: templates/woocommerce/checkout/wpgv-gift-voucher-form.php:19
+msgid "Please wait..."
+msgstr ""
+
+#: templates/woocommerce/cart/wpgv-gift-vouchers.php:27
+#: templates/woocommerce/checkout/wpgv-gift-vouchers.php:27
+msgid "Code"
+msgstr ""
+
+#: templates/woocommerce/cart/wpgv-gift-vouchers.php:28
+#: templates/woocommerce/checkout/wpgv-gift-vouchers.php:28
+#, php-format
+msgid "Remaining balance is %s"
+msgstr ""
+
+#: templates/woocommerce/cart/wpgv-gift-vouchers.php:34
+#: templates/woocommerce/checkout/wpgv-gift-vouchers.php:34
+msgid "Expired"
+msgstr ""
+
+#: templates/woocommerce/cart/wpgv-gift-vouchers.php:43
+#: templates/woocommerce/checkout/wpgv-gift-vouchers.php:43
+msgid "[Remove]"
+msgstr ""
+
+#: templates/woocommerce/checkout/wpgv-gift-voucher-form.php:7
+msgid "Have a gift voucher?"
+msgstr ""
+
+#: templates/woocommerce/checkout/wpgv-gift-voucher-form.php:7
+msgid "Click here to enter your gift voucher code"
+msgstr ""
+
+#: templates/woocommerce/checkout/wpgv-gift-voucher-form.php:12
+msgid "If you have a gift card number, please apply it below."
+msgstr ""
+
+#: templates/wpgv_item_pdf.php:11 templates/wpgv_item_pdf.php:13
+#: templates/wpgv_voucher_pdf.php:11 templates/wpgv_voucher_pdf.php:13
+msgid "This is a preview voucher."
+msgstr ""
+
+#: upgrade.php:76 upgrade.php:122 upgrade.php:183
+msgid "An error occurred, please try again."
+msgstr ""
+
+#: upgrade.php:89
+#, php-format
+msgid "Your license key expired on %s."
+msgstr ""
+
+#: upgrade.php:96
+msgid "Your license key has been disabled."
+msgstr ""
+
+#: upgrade.php:101
+msgid "Invalid license."
+msgstr ""
+
+#: upgrade.php:107
+msgid "Your license is not active for this URL."
+msgstr ""
+
+#: upgrade.php:112
+#, php-format
+msgid "This appears to be an invalid license key for %s."
+msgstr ""
+
+#: upgrade.php:117
+msgid "Your license key has reached its activation limit."
+msgstr ""
