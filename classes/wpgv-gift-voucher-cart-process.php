@@ -24,9 +24,9 @@ final class wpgv_gift_voucher_cart_process {
         add_filter( 'woocommerce_order_status_refunded', array( $this, 'woocommerce_order_status_refunded' ), 11, 2 );
         add_filter( 'wp_trash_post', array( $this, 'order_deleted' ) );
         add_filter( 'untrash_post', array( $this, 'order_restored' ) );
-        add_filter( 'woocommerce_order_item_needs_processing', array( $this, 'woocommerce_order_item_needs_processing' ), 10, 3 );
 
-        // Disable the AJAX add-to-cart for the PW Gift Cards product on certain themes since it does not correctly add the fields to the cart item data.
+        // add_filter( 'woocommerce_order_item_needs_processing', array( $this, 'woocommerce_order_item_needs_processing' ), 10, 3 );
+
         add_filter( 'et_option_ajax_addtocart', array( $this, 'et_option_ajax_addtocart' ) );
         add_filter( 'theme_mod_disable_wc_sticky_cart', array( $this, 'theme_mod_disable_wc_sticky_cart' ) );
         add_filter( 'theme_mod_ocean_woo_product_ajax_add_to_cart', array( $this, 'theme_mod_ocean_woo_product_ajax_add_to_cart' ) );
@@ -416,8 +416,10 @@ final class wpgv_gift_voucher_cart_process {
             $value = wc_get_order_item_meta( $order_item_id, WPGV_AMOUNT_META_KEY );
             $your_name = wc_get_order_item_meta( $order_item_id, WPGV_YOUR_NAME_META_KEY );
             $recipient_name = wc_get_order_item_meta( $order_item_id, WPGV_RECIPIENT_NAME_META_KEY );
+
             $recipient_email = wc_get_order_item_meta( $order_item_id, WPGV_RECIPIENT_EMAIL_META_KEY );
             $your_email = wc_get_order_item_meta( $order_item_id, WPGV_YOUR_EMAIL_META_KEY );
+
             $msg = wc_get_order_item_meta( $order_item_id, WPGV_MESSAGE_META_KEY );
             $product_img = wp_get_attachment_url(get_post_thumbnail_id($product_id));
             $order_quantity = $order_item['quantity'];
@@ -426,11 +428,11 @@ final class wpgv_gift_voucher_cart_process {
             $order = wc_get_order( $order_id );
             $wvgc_order_id = $order->get_id();
             $billing_email  = $order->get_billing_email();
-            if($recipient_email == null){
-                $recipient_email = $billing_email;
-            }else{
-                $recipient_email = wc_get_order_item_meta( $order_item_id, WPGV_RECIPIENT_EMAIL_META_KEY );
-            }
+            // if($recipient_email == null){
+            //     $recipient_email = $billing_email;
+            // }else{
+            //     $recipient_email = wc_get_order_item_meta( $order_item_id, WPGV_RECIPIENT_EMAIL_META_KEY );
+            // }
             // Create any new/missing gift cards.
             
             $numbers = array();
@@ -444,7 +446,7 @@ final class wpgv_gift_voucher_cart_process {
                 wc_add_order_item_meta( $order_item_id, WPGV_GIFT_VOUCHER_NUMBER_META_KEY, $code );
             }
 
-        }
+            }
             global $wpdb;
             $voucher_table 	= $wpdb->prefix . 'giftvouchers_list';
             $setting_table 	= $wpdb->prefix . 'giftvouchers_setting';
@@ -487,6 +489,7 @@ final class wpgv_gift_voucher_cart_process {
                 $buy_email = $voucher_options->email;
             }
             
+            
             /* Recipient Mail */
             if($voucher_options->shipping_type != 'shipping_as_post') {
                 $recipientsub = wpgv_mailvarstr_multiple($recipientemailsubject, $setting_options, $voucher_options_results);
@@ -526,12 +529,26 @@ final class wpgv_gift_voucher_cart_process {
             $attachments[] = $upload_dir.'/voucherpdfuploads/'.$voucher_options->voucherpdf_link.'-receipt.pdf';
             $attachments[] = $upload_dir.'/voucherpdfuploads/'.$voucher_options->voucherpdf_link.'-invoice.pdf';
 
-            // /* Buyer Mail */
+            // /* Your email address (for the receipt) | Name email Order Confirmation */ 
             $buyersub = wpgv_mailvarstr_multiple($emailsubject, $setting_options, $voucher_options_results);
             $buyermsg = wpgv_mailvarstr_multiple($emailbody, $setting_options, $voucher_options_results);
-            $buyerto = $voucher_options->from_name .'<'.$buy_email.'>';
+            $buyerto  = null;
+            if($setting_options->is_order_form_enable == 1){
+                if($voucher_options->email == null){
+                    $buyerto = $voucher_options->from_name .'<'.$billing_email.'>';
+                }else{
+                    $buyerto = $voucher_options->from_name .'<'.$voucher_options->email.'>';
+                }
+                
+            }else{
+                $buyerto = $voucher_options->from_name .'<'.$billing_email.'>';
+            }
+           
             $mail_sent = wp_mail( $buyerto, $buyersub, $buyermsg, $headers, $attachments );
+            // /* Your email address (for the receipt) | Name email Order Confirmation */ 
 
+            
+            // Send mail enter checkout woocommerce
             if($mail_sent == true) {
                 $successpagemessage = get_option('wpgv_successpagemessage') ? get_option('wpgv_successpagemessage') : 'We have got your order! <br>E-Mail Sent Successfully to %s';
                 $return .= '<div class="success">'.sprintf(stripslashes($successpagemessage), $voucher_options_results->email).'</div>';
@@ -539,8 +556,17 @@ final class wpgv_gift_voucher_cart_process {
                 if(isset($_GET['per_invoice']) && $_GET['per_invoice'] == 1) {
                     $return .= $setting_options->bank_info;
                 }
-
-                $toadmin = $setting_options->sender_name.' <'.$setting_options->sender_email.'>';
+                $toadmin = null;
+                if($setting_options->is_order_form_enable == 1){
+                    $toadmin = $voucher_options->from_name .'<'.$billing_email.'>';
+                }else{
+                    if($voucher_options->email == null){
+                        $toadmin = $setting_options->sender_name.' <'.$billing_email.'>';
+                    }else{
+                        $toadmin = $voucher_options->from_name .'<'.$voucher_options->email.'>';
+                    }
+                }
+                
                 $subadmin = wpgv_mailvarstr_multiple($adminemailsubject, $setting_options, $voucher_options_results);
                 $bodyadmin = wpgv_mailvarstr_multiple($adminemailbody, $setting_options, $voucher_options_results);
                 $headersadmin = 'Content-type: text/html;charset=utf-8' . "\r\n";
@@ -548,15 +574,14 @@ final class wpgv_gift_voucher_cart_process {
                 $headersadmin .= 'Reply-to: '.$voucher_options->from_name.' <'.$buy_email.'>' . "\r\n";
                 wp_mail( $toadmin, $subadmin, $bodyadmin, $headersadmin, $attachments );
             }
-        // exit();
-        //do_action( 'WPGV_gift_cards_send_emails', $order_id );
+             // Send mail enter checkout woocommerce
     }
 
     function deactivate_gift_vouchers_from_order( $order_id, $order, $note ) {
         foreach ( $order->get_items( 'line_item' ) as $order_item_id => $order_item ) {
             $item_note = $note . ", order_item_id_789: $order_item_id";
 
-            $gift_card_numbers = (array) wc_get_order_item_meta( $order_item_id, WPGV_GIFT_CARD_NUMBER_META_KEY, false );
+            $gift_card_numbers = (array) wc_get_order_item_meta( $order_item_id, 'WPGV_GIFT_CARD_NUMBER_META_KEY', false );
             foreach ( $gift_card_numbers as $gift_card_number ) {
                 $gift_voucher = new WPGV_Gift_Voucher( $gift_card_number );
                 $gift_voucher->deactivate( $item_note );
