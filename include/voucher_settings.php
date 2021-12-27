@@ -811,7 +811,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'create_default_pages') { ?>
 									</th>
 									<td>
 										<div>
-											<input name="voucher_color_preview" type="text" id="voucher_bgcolor" value="<?php echo esc_html($voucher_color_preview); ?>" class="regular-text" aria-required="true">
+										<input name="voucher_color_preview" type="text" id="voucher_bgcolor" value="<?php echo esc_html($color_preview); ?>" class="regular-text" aria-required="true">
 										</div>
 									</td>
 								</tr>
