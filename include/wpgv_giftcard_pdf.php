@@ -208,7 +208,7 @@ function wpgv__doajax_gift_card_pdf_save_func(){
 		// ResultPrinter::printResult("Created Payment Order Using PayPal. Please visit the URL to Approve.", "Payment", "<a href='$approvalUrl' >$approvalUrl</a>", $request, $payment);
 
 		echo $approvalUrl;
-		// var_dump($approvalUrl);
+		
 		
 	}elseif($paymentmethod == 'Sofort') {
 
@@ -318,8 +318,7 @@ function wpgv__doajax_gift_card_pdf_save_func(){
               		"email" => $email,
           		),
       		));
-      		// var_dump($msp->orders->getPaymentLink())
-      		// exit();
+      		
 		    echo $msp->orders->getPaymentLink();
     	} catch (Exception $e) {
       		echo "Error " . htmlspecialchars($e->getMessage());

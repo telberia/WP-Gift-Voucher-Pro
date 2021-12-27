@@ -1073,8 +1073,6 @@ function wpgv_customer_columns_content($column, $post_ID)
 
 		case 'status':
 			$values = get_post_custom($post->ID);
-			// echo "<pre>";
-			// var_dump($values);
 			$status = isset($values["wpgv_customize_template_status"]) ? $values["wpgv_customize_template_status"]['0'] : __('Inactive', 'gift-voucher');
 			if ($status == 'Active') {
 				echo '<p class="wpgv-status-active" style="font-weight: 500; "><span>' . $status . '</span></p>';
@@ -1089,7 +1087,7 @@ function wpgv_customer_columns_content($column, $post_ID)
 				$images_s3 = isset($values["wpgv_customize_template_template-style"]) ? $values["wpgv_customize_template_template-style"]['0'] : __('', 'gift-voucher');
 				$images_media = isset($values["wpgv_customize_template_bg_result"]) ? wp_get_attachment_image_url($values["wpgv_customize_template_bg_result"]['0'], 'full') : __('', 'gift-voucher');
 				$chosse_template = isset($values["wpgv_customize_template_chosse_template"]) ? $values["wpgv_customize_template_chosse_template"]['0'] : __('', 'gift-voucher');
-				// var_dump($chosse_template);
+				
 				if($chosse_template != "0"){
 					if(isset($values["wpgv_customize_template_template-style"])){
 						if(isset($values["wpgv_customize_template_select_template"])){
@@ -1175,8 +1173,6 @@ function wpgv_save_image()
 	$attachment_meta = wp_generate_attachment_metadata($attach_id, $filename);
 	wp_update_attachment_metadata($attach_id, $attachment_meta);
 	set_post_thumbnail($post_id, $attach_id);
-	// var_dump($post_id_template);
-	// exit();
 	
 	echo $attach_id;
 	

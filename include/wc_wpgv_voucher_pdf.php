@@ -143,8 +143,6 @@ function wc_wpgv_voucher_pdf_save_func($value,$for,$from,$email,$shipping_email,
 	// $upload_dir = $upload['basedir'];
 	// $attachments[0] = $upload_dir.'/voucherpdfuploads/'.$voucher_options->voucherpdf_link.'.pdf';
 
-	// // var_dump($attachments);
-	// // exit();
 	// $headers = 'Content-type: text/html;charset=utf-8' . "\r\n";
 	// $headers .= 'From: '.$setting_options->sender_name.' <'.$setting_options->sender_email.'>' . "\r\n";
 	// $headers .= 'Reply-to: '.$setting_options->sender_name.' <'.$setting_options->sender_email.'>' . "\r\n";

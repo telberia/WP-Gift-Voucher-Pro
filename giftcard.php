@@ -99,8 +99,11 @@ function wpgv_voucher_template_shortcode(){
                         </div>
                         <div id="select-template-voucher" class="wrap-main-voucher-template">
                         <div id="template_giftcard_container_1"></div>
-                        <div id="template_giftcard_container_2" style="display:none"></div>
+                        
                         </div>
+                    </div>
+                    <div class="" style=" position: absolute;left: -1000%;">
+                        <div id="template_giftcard_container_2"></div>
                     </div>
                 </div>
                 <div id="voucher-continue-step">
@@ -148,6 +151,7 @@ function get_data_settings_voucher(){
     $setting_table  = $wpdb->prefix . 'giftvouchers_setting';
     $setting_options = $wpdb->get_row( "SELECT * FROM $setting_table WHERE id = 1");
     return $setting_options;
+    
 }
 
 // function get template voucher portail
@@ -210,8 +214,7 @@ function get_data_template_voucher($type, $template_voucher, $category_voucher){
         while( $template_voucher_args->have_posts() ) : $template_voucher_args->the_post();
             $post_id = get_the_ID();
             $select_status_template = get_post_meta($post_id,'wpgv_customize_template_select_template',true);
-            // echo "<pre>";
-            // var_dump($select_status_template);
+            
             if($select_status_template == ""){
                 $selected_voucher_template = get_post_meta($post_id,'wpgv_customize_template_template-style',true);
                 $frame_no = preg_replace('/[^0-9]/', '', $selected_voucher_template);
@@ -246,7 +249,7 @@ function get_data_template_voucher($type, $template_voucher, $category_voucher){
                 }else if($select_status_template == "custom"){
                     $get_bg_temp = get_post_meta($post_id,'wpgv_customize_template_bg_result',true);
                     $link_bg_temp = wp_get_attachment_image_src( $get_bg_temp, 'large' );
-                    // var_dump($get_bg_temp);
+                    
                     $html.= '<div class="item-voucher-template">
                         <img src="' . $link_bg_temp[0] . '" alt="'.get_the_title().'">';
                         $html.= '<div class="layout-overlay" data-template="'.$type.'" data-src="'. $link_bg_temp[0] .'" data-post_id="'.$post_id.'">

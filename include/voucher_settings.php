@@ -8,8 +8,7 @@ $invoice_table 	= $wpdb->prefix . 'giftvouchers_invoice_settings';
 $setting_invoice = $wpdb->get_row( "SELECT * FROM $invoice_table WHERE id = 1" );
 
 
-// var_dump($setting_invoice->is_invoice_active);
-// exit();
+
 if (!current_user_can('manage_options')) {
 	wp_die('You are not allowed to be on this page.');
 }

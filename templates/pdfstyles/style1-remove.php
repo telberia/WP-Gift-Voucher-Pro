@@ -1,8 +1,7 @@
 <?php
 
 // PDF Style 1
-// var_dump($code);
-// exit();
+
 if($formtype == 'item'){
 	$wpgv_hide_price = get_option('wpgv_hide_price_item') ? get_option('wpgv_hide_price_item') : 0;
 }

@@ -137,7 +137,7 @@ jQuery(document).ready(function($) {
     //jQuery select template gift card
     jQuery(document).on('click', '#giftvoucher-template .item-voucher-template .layout-button', function(event) {
         var voucher_id = jQuery(this).parents('.layout-overlay').data('post_id');
-        //console.log(voucher_id);
+
         var step_voucher = voucherTemplate.find('.giftvoucher-step.active .step-group').data('step');
         var data = {
             action: 'ajax_select_voucher_template',
@@ -151,7 +151,7 @@ jQuery(document).ready(function($) {
                 voucherTemplate.find('.voucher-content-step').addClass('loading');
             },
             success: function(results) {
-                //console.log(JSON.parse(results));
+
                 var data = JSON.parse(results);
                 imagesGiftCard = data.url;
                 currency = data.currency;
@@ -187,10 +187,10 @@ jQuery(document).ready(function($) {
                     fitStageIntoParentContainer()
                     jQuery('#show-preview-gift-card').trigger('click');
                     voucherTemplate.find('.voucher-content-step').removeClass('loading');
-                    var getwidthstage2 = jQuery("#template_giftcard_container_2 .konvajs-content canvas").attr("width");
-                    var getheightstage2 = jQuery("#template_giftcard_container_2 .konvajs-content canvas").attr("height");
-                    jQuery("#template_giftcard_container_2").attr("data-width", getwidthstage2);
-                    jQuery("#template_giftcard_container_2").attr("data-height", getheightstage2);
+                    // var getwidthstage2 = jQuery("#template_giftcard_container_2 .konvajs-content canvas").attr("width");
+                    // var getheightstage2 = jQuery("#template_giftcard_container_2 .konvajs-content canvas").attr("height");
+                    // jQuery("#template_giftcard_container_2").attr("data-width", getwidthstage2);
+                    // jQuery("#template_giftcard_container_2").attr("data-height", getheightstage2);
 
                 }, 100);
                 // auto draw font
@@ -250,7 +250,7 @@ jQuery(document).ready(function($) {
         voucherTemplate.find('.shipping-type').removeClass('active');
         jQuery(this).addClass('active');
         var totalPrice = parseFloat(parseFloat(voucher_price_value.val()) + parseFloat(voucher_extra_charges.val()));
-        // console.log(buying_for);
+
         if (typeShipping == 'shipping_as_email') {
             if (buying_for != 'yourself') {
                 jQuery(voucher_recipient_email).parent('.voucher-template-input').show();
@@ -428,14 +428,13 @@ jQuery(document).ready(function($) {
     function wpgv_validateitemform($step) {
         $status = 0;
         buying_for = jQuery('#giftvoucher-template #buying_for').val();
-        // console.log($step);
+
         if ($step == '3') {
 
             var get_value_price = voucher_price_value.val();
             var get_min_price = voucher_price_value.attr("min-value");
             if (voucher_price_value.val() && voucher_price_value.val() > 0) {
-                // console.log(parseInt(get_value_price));
-                // console.log(parseInt(get_min_price));
+
                 if (parseInt(get_value_price) < parseInt(get_min_price)) {
                     $status = 0;
                     voucher_price_value.closest('.voucher-template-input').find('.error-input').html(frontend_ajax_object.min_value + get_min_price);
@@ -596,13 +595,6 @@ jQuery(document).ready(function($) {
         var checkacceptVoucherTerms = $('input[name=acceptVoucherTerms]:checked').is(':checked');
         if (checkacceptVoucherTerms == true) {
             voucherTemplate.find('.order-voucher-details .acceptVoucherTerms .error-input').hide();
-            var stageWidth2 = jQuery("#template_giftcard_container_2").attr("data-width");
-            var stageHeight2 = jQuery("#template_giftcard_container_2").attr("data-height");
-            var scalestage2 = 3;
-            stage2.width((stageWidth2 * scalestage2));
-            stage2.height((stageHeight2 * scalestage2));
-            stage2.scale({ x: scalestage2, y: scalestage2 });
-            stage2.draw();
             var dataURL = stage2.toDataURL();
             addImagesGiftCard(dataURL);
             var data = voucherTemplate.find('#dataVoucher').val();
@@ -663,7 +655,7 @@ jQuery(document).ready(function($) {
                     });
                     if (typeof stage.find('#giftcard_logo')[0] !== 'undefined') {
                         stage.find('#giftcard_logo').forEach(imageNode => {
-                            // console.log(imageNode);
+
                             let nativeImage = new window.Image();
                             nativeImage.onload = () => {
                                 imageNode.image(nativeImage);
@@ -864,7 +856,7 @@ jQuery(document).ready(function($) {
                     voucher_price_value.on('keyup', function() {
                         var dInput = this.value;
                         if (typeof stage.find('#giftcard_monney')[0] !== 'undefined') {
-                            // console.log(stage.find('#giftcard_monney')[0]);
+
                             var node_price_value = stage.find('#giftcard_monney')[0];
                             if (voucherTemplate.find('#setup-shopping-payment-wrap .price-voucher.currency_right').length > 0) {
                                 node_price_value.text(dInput + '' + currency);
@@ -954,6 +946,20 @@ jQuery(document).ready(function($) {
             });
             stage1.draw();
         }
+        if (stage2 != null) {
+            var container = document.querySelector('#template_giftcard_container_2');
+            // now we need to fit stage into parent
+            var containerWidth = container.offsetWidth;
+            // to do this we need to scale the stage
+            var scale = containerWidth / stageWidth;
+            stage2.width(stageWidth * scale);
+            stage2.height(stageHeight * scale);
+            stage2.scale({
+                x: scale,
+                y: scale
+            });
+            stage2.draw();
+        }
     }
     fitStageIntoParentContainer();
     // adapt the stage on any window resize
@@ -962,7 +968,7 @@ jQuery(document).ready(function($) {
         if (stage2 != null) {
             fitStageIntoParentContainer();
             var dataURL_2 = stage2.toDataURL({
-                pixelRatio: 1
+                pixelRatio: 2
             });
             addImagesGiftCard(dataURL_2);
         }
@@ -992,7 +998,7 @@ jQuery(document).ready(function($) {
                 layerPreview.add(preview);
 
                 var dataURL_2 = stage2.toDataURL({
-                    pixelRatio: 1
+                    pixelRatio: 1.2
                 });
                 addImagesGiftCard(dataURL_2);
                 // //stage.add(preview);
@@ -1002,12 +1008,11 @@ jQuery(document).ready(function($) {
                     giftcard_counpon.text('XXXXXXXX');
                     stage2.draw();
                     var dataURL_2 = stage2.toDataURL({
-                        pixelRatio: 1
+                        pixelRatio: 1.2
                     });
                     addImagesGiftCard(dataURL_2);
                 }
-                // stageWidth_2 = stage2.getAttr('width');
-                // stageHeight_2 = stage2.getAttr('height');
+
                 var stageWidth_2 = jQuery("#template_giftcard_container_2").attr("data-width");
                 var stageHeight_2 = jQuery("#template_giftcard_container_2").attr("data-height");
                 var scalestage_2 = null;
@@ -1020,13 +1025,7 @@ jQuery(document).ready(function($) {
                     var pdf = new jsPDF('p', 'pt', 'a4', true);
                     scalestage_2 = 2;
                 }
-                // console.log(stage2.width((stageWidth_2 * scalestage_2)));
-                // console.log(stage2.height((stageHeight_2 * scalestage_2)));
-                // console.log(scalestage_2);
-                stage2.width((stageWidth_2 * scalestage_2));
-                stage2.height((stageHeight_2 * scalestage_2));
-                stage2.scale({ x: scalestage_2, y: scalestage_2 });
-                stage2.draw();
+
                 var dataURL = stage2.toDataURL();
                 addImagesGiftCard(dataURL);
                 let pageWidth = pdf.internal.pageSize.getWidth();
@@ -1039,7 +1038,7 @@ jQuery(document).ready(function($) {
                 let marginX = (pageWidth - canvasWidth) / 2;
                 let marginY = (pageHeight - canvasHeight) / 2;
                 var dataURL_2 = stage2.toDataURL({
-                    pixelRatio: 1
+                    pixelRatio: 1.2
                 });
                 pdf.addImage(dataURL_2, 'PNG', marginX, marginY, canvasWidth, canvasHeight, '', 'FAST');
 

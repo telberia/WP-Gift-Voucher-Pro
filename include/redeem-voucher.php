@@ -123,7 +123,7 @@ final class WPGV_Redeem_Voucher {
         // Sum all the gift card amounts (with a sanity check for good measure).
         $gift_voucher_total = 0;
         foreach ( $session_data['gift_voucher'] as $card_number => $amount ) {
-            // var_dump($amount);
+            
             $wpgv_gift_voucher = new WPGV_Gift_Voucher( $card_number );
             if ( $wpgv_gift_voucher->get_id() ) {
 
@@ -279,8 +279,7 @@ final class WPGV_Redeem_Voucher {
                     'label'  => _n( $voucher_text.' '.$total_codes, $voucher_texts.' '.$total_codes, $gift_voucher_count, 'gift-voucher' ),
                     'value'  => '-'.wpgv_price_format( $gift_voucher_total),
                 );
-                // var_dump($gift_voucher_row);
-                // exit();
+                
                 $total_index = array_search( 'order_total', array_keys( $total_rows ) );               
                 if ( $total_index !== false ) {
                     // Insert this just before the Total row.         
