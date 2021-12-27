@@ -46,45 +46,25 @@ final class WPGV_Redeem_Voucher {
     function woocommerce_init() {
     	add_rewrite_endpoint( 'check-voucher-balance', EP_ROOT | EP_PAGES );
     }
-    // function woocommerce_auto_complete_order_gift_voucher( $order_id ) { 
-    //     if ( ! $order_id ) {
-    //         return;
-    //     }
-    //     $order = wc_get_order( $order_id );
-    //     if ($order->get_payment_method() == 'stripe') {
-    //         $order->update_status( 'processing' );
-    //     }
-    // }
-
-    
-    function filter_woocommerce_payment_complete_order_status_gift_voucher( $status, $order_id, $order ) {
-        global $wpdb;
-		$setting_table_name = $wpdb->prefix . 'giftvouchers_setting';
-		$options = $wpdb->get_row( "SELECT * FROM $setting_table_name WHERE id = 1" );
+  
+    function filter_woocommerce_payment_complete_order_status_gift_voucher( $var, $order_id, $instance ) { 
+        if ( ! $order_id ) {
+            return;
+        }
         $order = wc_get_order( $order_id );
         if ($order->get_payment_method() == 'stripe') {
-            
+            global $wpdb;
+            $setting_table_name = $wpdb->prefix . 'giftvouchers_setting';
+            $options = $wpdb->get_row( "SELECT * FROM $setting_table_name WHERE id = 1" );
             if($options->is_stripe_enable == 0){
                 return 'processing';
             }else{
                 return 'completed';
             }
+        }else{
+            return $var;
         }
     }
-
-//    function filter_woocommerce_payment_complete_order_status_gift_voucher( $var, $order_id, $instance ) { 
-//         if ( ! $order_id ) {
-//             return;
-//         }
-//         $order = wc_get_order( $order_id );
-//         if ($order->get_payment_method() == 'stripe') {
-//             if($options->is_stripe_enable == 1){
-//                 return 'completed';
-//             }
-//         }else{
-//             return $var;
-//         }
-//     }
 
     function woocommerce_query_vars( $vars ) {
     	$vars[] = 'check-voucher-balance';
@@ -208,19 +188,7 @@ final class WPGV_Redeem_Voucher {
     // Ensure we have the right total, even after recalculations and such.
     function woocommerce_update_order( $order_id ) {
         remove_action( 'woocommerce_update_order', array( $this, 'woocommerce_update_order' ) );
-        $order = wc_get_order( $order_id );
-        // echo '<pre>';
-        // var_dump($order);
-        // echo '</pre>';
-        // $args = array(
-        //     'status' => 'approve',
-        //     'post_id' => $order_id
-        // );
-        // $comments = get_comments($args);
-        // foreach($comments as $comment) :
-        //     var_dump($comment->comment_content);
-        // endforeach;
-        // exit();    
+        $order = wc_get_order( $order_id );   
         if ( $order ) {           
             $cart_total = 0;
             $gift_voucher_total = 0;
@@ -322,10 +290,7 @@ final class WPGV_Redeem_Voucher {
                 }
             }
         }
-        // echo '<pre>';
-        // var_dump($total_rows);
-        // echo '</pre>';
-        // exit();
+
         return $total_rows;
     }
 
