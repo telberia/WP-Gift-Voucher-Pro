@@ -613,9 +613,12 @@ function wpgv_voucher_shortcode()
 function wpgv__doajax_front_template() {
     global $wpdb;
     $template_table = $wpdb->prefix . 'giftvouchers_template';
-    $template_id = $_REQUEST['template_id'];
-    $template_options = $wpdb->get_row( "SELECT * FROM $template_table WHERE id = $template_id" );
-    
+    $template_id = (int) sanitize_text_field($_REQUEST['template_id']);
+    $template_options = $wpdb->get_row(
+        $wpdb->prepare( "'SELECT * FROM $template_table WHERE id = %id'",
+         $template_id
+      )
+    );
     $wpgv_hide_first_step = (get_option('wpgv_hide_first_step')) ? get_option('wpgv_hide_first_step') : 0;    
     if($wpgv_hide_first_step == 0){
         $images = $template_options->image_style ? json_decode($template_options->image_style) : ['','',''];
