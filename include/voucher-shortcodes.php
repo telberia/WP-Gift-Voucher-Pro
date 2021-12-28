@@ -171,8 +171,8 @@ function wpgv_voucher_successful_shortcode() {
 					wp_schedule_single_event( $send_gift_voucher_email_event_date_time, 'send_gift_voucher_email_event', $send_gift_voucher_email_event_args );
 				}
 			}
+			$attachments[1] = $upload_dir.'/voucherpdfuploads/'.$voucher_options->voucherpdf_link.'-receipt.pdf';
 			if (!isset($_GET['per_invoice'])) {
-				$attachments[1] = $upload_dir.'/voucherpdfuploads/'.$voucher_options->voucherpdf_link.'-receipt.pdf';
 				$attachments[2] = $upload_dir.'/voucherpdfuploads/'.$voucher_options->voucherpdf_link.'-invoice.pdf';		
 			}
 
