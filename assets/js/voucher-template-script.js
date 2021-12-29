@@ -136,6 +136,7 @@ jQuery(document).ready(function($) {
     });
     //jQuery select template gift card
     jQuery(document).on('click', '#giftvoucher-template .item-voucher-template .layout-button', function(event) {
+        $('#voucher-next-step').removeAttr('target');
         var voucher_id = jQuery(this).parents('.layout-overlay').data('post_id');
 
         var step_voucher = voucherTemplate.find('.giftvoucher-step.active .step-group').data('step');
