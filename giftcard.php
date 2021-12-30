@@ -547,13 +547,15 @@ function show_order_detail_voucher(){
             $html .= '</div>';
             $html .= '<div class="order-info-name">'.__('Your name:','gift-voucher').'<span class="order-your-name"></span></h5></div>';
         $html .= '</div>';
-        $html .= '<div class="order-info">';
+        if($wpgv_add_extra_charges != 0){
+            $html .= '<div class="order-info">';
             $html .= '<h5 class="title-order">'.$wpgv_additional_charges_text.'</h5>';
             $html .= '<div class="price-voucher-extra-charges '.get_position_currency_giftcard().'">';  
                 $html .= '<span class="currency">'.$setting_options->currency.'</span>';            
                 $html .= '<span class="currency-price-extra_charges">'.$wpgv_add_extra_charges.'</span>';           
             $html .= '</div>';
-        $html .= '</div>'; 
+            $html .= '</div>'; 
+        }
         if (!empty($setting_options->post_shipping)) { 
             $html .= '<div class="order-info order-info-shipping">';
                 $html .= '<h5 class="title-order">'.__('Shipping','gift-voucher').'</h5>';
