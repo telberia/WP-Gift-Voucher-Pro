@@ -80,6 +80,7 @@ class WPGV_Voucher_List extends WP_List_Table {
 	 */
 	public static function used_voucher( $id ) 
 	{
+		// Fix Minh
 		global $wpdb;
 
 		$wpdb->update(
@@ -87,8 +88,21 @@ class WPGV_Voucher_List extends WP_List_Table {
 			array('id'=>$id, 'status'=>'used'),
 			array('id'=>$id)
 		);
-		$result = $wpdb->get_row( "SELECT * FROM `{$wpdb->prefix}giftvouchers_list` WHERE `id` = $id" );
-		WPGV_Gift_Voucher_Activity::record( $id, 'transaction', '-'.$result->amount, 'Voucher used completely.' );
+		$sum_redeem = null;
+		$sum_result = null;
+		$result = $wpdb->get_results( "SELECT * FROM `{$wpdb->prefix}giftvouchers_activity` WHERE `voucher_id` = $id " );
+		foreach($result as $amountsum){
+			if($amountsum->action == "firsttransact"){
+				$sum_result = (int) $amountsum->amount;
+			}
+			if($amountsum->action == "transaction"){
+				$sum_redeem += (int) $amountsum->amount;
+			}
+			
+		}
+		$sum_all = $sum_result + $sum_redeem;
+	
+		WPGV_Gift_Voucher_Activity::record( $id, 'transaction', '-'.$sum_all, 'Voucher used completely.' );
 	}
 
 	/**

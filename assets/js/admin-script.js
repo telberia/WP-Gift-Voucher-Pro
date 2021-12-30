@@ -14,6 +14,7 @@
 })(jQuery);
 
 function redeemVoucher(voucher_id, amount) {
+    jQuery("#redeem_Voucher").attr("disabled", true);
     var voucher_amount = jQuery('#voucher_amount' + voucher_id).val();
     if (amount >= voucher_amount) {
         var data = {
