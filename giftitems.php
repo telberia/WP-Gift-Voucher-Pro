@@ -96,8 +96,8 @@ function wpgv_giftitems_shortcode ($atts = '')
 
     $voucher_value_html = (!$wpgv_hide_price) ? '<div class="voucherValueForm">
                         <label>'.__('Voucher Value', 'gift-voucher' ).'</label>
-                        <span class="currencySymbol"> '.$setting_options->currency.' </span>
-                        <input type="text" name="voucherValueCard" class="voucherValueCard" readonly>
+                        <span class="currencySymbol" style="'. (($setting_options->currency_position == 'Left') ? 'left:15px;right:unset;' : 'right:15px;left:unset;') .'"> '.$setting_options->currency.' </span>
+                        <input style="'. (($setting_options->currency_position == 'Left') ? 'padding-left:30px;padding-right:10px' : 'padding-right:30px;padding-left:10px') .'" type="text" name="voucherValueCard" class="voucherValueCard" readonly>
                     </div>' : '';
 
     $voucher_bgcolor = $setting_options->voucher_bgcolor;

@@ -948,18 +948,20 @@ jQuery(document).ready(function($) {
             stage1.draw();
         }
         if (stage2 != null) {
-            var container = document.querySelector('#template_giftcard_container_2');
-            // now we need to fit stage into parent
-            var containerWidth = container.offsetWidth;
-            // to do this we need to scale the stage
-            var scale = containerWidth / stageWidth;
-            stage2.width(stageWidth * scale);
-            stage2.height(stageHeight * scale);
-            stage2.scale({
-                x: scale,
-                y: scale
-            });
-            stage2.draw();
+            setTimeout(function() {
+                var container = document.querySelector('#template_giftcard_container_2');
+                // now we need to fit stage into parent
+                var containerWidth = container.offsetWidth;
+                // to do this we need to scale the stage
+                var scale = containerWidth / stageWidth;
+                stage2.width(stageWidth * scale);
+                stage2.height(stageHeight * scale);
+                stage2.scale({
+                    x: scale,
+                    y: scale
+                });
+                stage2.draw();
+            }, 1500);
         }
     }
     fitStageIntoParentContainer();

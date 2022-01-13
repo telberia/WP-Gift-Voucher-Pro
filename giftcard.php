@@ -102,7 +102,7 @@ function wpgv_voucher_template_shortcode(){
                         
                         </div>
                     </div>
-                    <div class="" style=" position: absolute;left: -1000%;">
+                    <div class="" style=" position: absolute;top: -1000%;width:100%;max-width:100%;">
                         <div id="template_giftcard_container_2"></div>
                     </div>
                 </div>
@@ -412,8 +412,8 @@ function set_up_gift_voucher(){
     $html .= '<div class="voucher-template-input price-voucher">
         <label>'.__('Gift Value','gift-voucher').'</label>
         <div class="price-template-voucher">
-            <span class="currencySymbol"> '.$setting_options->currency.' </span>
-            <input type="number" name="voucher_price_value" id="voucher_price_value" class="input-info-voucher" placeholder="'.sprintf("%s: %s", __('Min value', 'gift-voucher'), $setting_options->voucher_min_value).'" value="" min-value="'.$setting_options->voucher_min_value.'" max-value="'.$setting_options->voucher_max_value.'" required>
+        <span class="currencySymbol" style="'. (($setting_options->currency_position == 'Left') ? 'left:15px;right:unset;' : 'right:15px;left:unset;') .'"> '.$setting_options->currency.' </span>
+        <input style="'. (($setting_options->currency_position == 'Left') ? 'padding-left:30px;padding-right:10px' : 'padding-right:30px;padding-left:10px') .'" type="number" name="voucher_price_value" id="voucher_price_value" class="input-info-voucher" placeholder="'.sprintf("%s: %s", __('Min value', 'gift-voucher'), $setting_options->voucher_min_value).'" value="" min-value="'.$setting_options->voucher_min_value.'" max-value="'.$setting_options->voucher_max_value.'" required>
         </div>
         <span class="error-input">'.__('This field is required.','gift-voucher').'</span>
     </div>
