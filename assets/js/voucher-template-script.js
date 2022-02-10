@@ -607,11 +607,7 @@ jQuery(document).ready(function($) {
                 data: 'action=wpgv_save_gift_card' + data + '&urlImage=' + wpgv_b64EncodeUnicode(dataURL),
 
                 success: function(a) {
-                    if (voucherTemplate.find('#payment_gateway').val() == 'Stripe') {
-                        $('body').append(a);
-                    } else {
-                        window.location.replace(a);
-                    }
+                    window.location = a;
                     voucherTemplate.find('#setup-voucher-template').removeClass('loading');
                 },
                 error: function() {

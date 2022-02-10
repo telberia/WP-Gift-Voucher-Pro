@@ -259,11 +259,7 @@ jQuery(document).ready(function($) {
                 type: "POST",
                 data: $datastring,
                 success: function(a) {
-                    if ($payemnt_gateway.val() == 'Stripe') {
-                        $('body').append(a);
-                    } else {
-                        window.location.replace(a);
-                    }
+                    window.location = a;
                 },
                 error: function() {
                     alert(frontend_ajax_object.error_occur);

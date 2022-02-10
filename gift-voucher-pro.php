@@ -786,36 +786,49 @@ function wpgv_em($word)
 	
 }
 
-function wpgv_mailvarstr_multiple($string, $setting_options, $voucher_options) {
-
+function wpgv_mailvarstr_multiple($string, $setting_options, $voucher_options_results) {
+	
 	$get_link_pdf = array();
 	$get_order_number = array();
-	foreach($voucher_options as $get_value){
+	$from_name = null;
+	$to_name = null;
+	$email = null;
+	$amount = null;
+	foreach($voucher_options_results as $get_value){
 		$get_link_pdf[] = get_home_url().'/wp-content/uploads/voucherpdfuploads/'.$get_value->voucherpdf_link.'.pdf';
 		$get_order_number[] = $get_value->id;
+		$from_name = $get_value->from_name;
+		$to_name = $get_value->to_name;
+		if($get_value->email){
+			$email = $get_value->email;
+		}else{
+			$email = $get_value->shipping_email;
+		}
+		$amount = $get_value->amount;
 	}
-
+	
 	
     $vars = array(
-      '{order_type}'        => ($voucher_options->order_type) ? $voucher_options->order_type : 'vouchers',
+      '{order_type}'        => ($voucher_options_results->order_type) ? $voucher_options_results->order_type : 'vouchers',
       '{company_name}'      => ($setting_options->company_name) ? stripslashes($setting_options->company_name) : '',
       '{website_url}'       => get_site_url(),
       '{sender_email}'      => $setting_options->sender_email,
       '{sender_name}'       => stripslashes($setting_options->sender_name),
       '{order_number}'      => implode(', ', $get_order_number),
-      '{amount}'            => $voucher_options->amount,
-      '{customer_name}'     => stripslashes($voucher_options->from_name),
-      '{recipient_name}'    => stripslashes($voucher_options->to_name),
-      '{customer_email}'    => ($voucher_options->email) ? $voucher_options->email : $voucher_options->shipping_email,
-      '{customer_address}'  => $voucher_options->address,
-      '{customer_postcode}' => $voucher_options->postcode,
-      '{coupon_code}'       => $voucher_options->couponcode,
-      '{payment_method}'    => $voucher_options->pay_method,
-      '{payment_status}'    => $voucher_options->payment_status,
+      '{amount}'            => $amount,
+      '{customer_name}'     => stripslashes($from_name),
+      '{recipient_name}'    => stripslashes($to_name),
+      '{customer_email}'    => $email,
+      '{customer_address}'  => $voucher_options_results->address,
+      '{customer_postcode}' => $voucher_options_results->postcode,
+      '{coupon_code}'       => $voucher_options_results->couponcode,
+      '{payment_method}'    => $voucher_options_results->pay_method,
+      '{payment_status}'    => $voucher_options_results->payment_status,
       '{pdf_link}'          => implode(', ', $get_link_pdf),
-      '{receipt_link}'      => get_home_url().'/wp-content/uploads/voucherpdfuploads/'.$voucher_options->voucherpdf_link.'-receipt.pdf',
+      '{receipt_link}'      => get_home_url().'/wp-content/uploads/voucherpdfuploads/'.$voucher_options_results->voucherpdf_link.'-receipt.pdf',
     );
     return strtr($string, $vars);
+	
 }
 function wpgv_mailvarstr($string, $setting_options, $voucher_options) {
     $vars = array(

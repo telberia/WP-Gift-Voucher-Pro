@@ -4,51 +4,50 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit7141de4fc30f5d7458bb0651df8223ed
+class ComposerStaticInit82bff7107904ea7e6378ce516a65a5c8
 {
     public static $prefixLengthsPsr4 = array (
         'S' => 
         array (
+            'Sample\\' => 7,
             'Stripe\\' => 7,
         ),
         'P' => 
         array (
-            'Psr\\Log\\' => 8,
+            'PayPalHttp\\' => 11,
+            'PayPalCheckoutSdk\\' => 18,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'Sample\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/samples',
+        ),
         'Stripe\\' => 
         array (
             0 => __DIR__ . '/..' . '/stripe/stripe-php/lib',
         ),
-        'Psr\\Log\\' => 
+        'PayPalHttp\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+            0 => __DIR__ . '/..' . '/paypal/paypalhttp/lib/PayPalHttp',
         ),
-    );
-
-    public static $prefixesPsr0 = array (
-        'P' => 
+        'PayPalCheckoutSdk\\' => 
         array (
-            'PayPal' => 
-            array (
-                0 => __DIR__ . '/..' . '/paypal/rest-api-sdk-php/lib',
-            ),
+            0 => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/lib/PayPalCheckoutSdk',
         ),
     );
 
     public static $classMap = array (
-        'FPDF' => __DIR__ . '/..' . '/setasign/fpdf/fpdf.php',
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit7141de4fc30f5d7458bb0651df8223ed::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit7141de4fc30f5d7458bb0651df8223ed::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit7141de4fc30f5d7458bb0651df8223ed::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit7141de4fc30f5d7458bb0651df8223ed::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit82bff7107904ea7e6378ce516a65a5c8::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit82bff7107904ea7e6378ce516a65a5c8::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit82bff7107904ea7e6378ce516a65a5c8::$classMap;
 
         }, null, ClassLoader::class);
     }

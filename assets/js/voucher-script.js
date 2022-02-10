@@ -407,12 +407,8 @@ jQuery(document).ready(function($) {
                 seller_addr_line4: sellerAddressLine4
             },
             success: function(a) {
-                // console.log(a);
-                if ($('#voucherPayment').val() == 'Stripe') {
-                    $('body').append(a);
-                } else {
-                    window.location.replace(a);
-                }
+                // fix minh
+                window.location = a;
             },
             error: function() {
                 alert(frontend_ajax_object.error_occur);

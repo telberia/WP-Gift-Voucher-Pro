@@ -4,14 +4,8 @@
 
 if( !defined( 'ABSPATH' ) ) exit;  // Exit if accessed directly
 
-use PayPal\Api\Amount;
-use PayPal\Api\Details;
-use PayPal\Api\Item;
-use PayPal\Api\ItemList;
-use PayPal\Api\Payer;
-use PayPal\Api\Payment;
-use PayPal\Api\RedirectUrls;
-use PayPal\Api\Transaction;
+// Fix minh
+use PayPalCheckoutSdk\Orders\OrdersCreateRequest;
 
 function wpgv__doajax_voucher_pdf_save_func() {
 	
@@ -202,57 +196,45 @@ function wpgv__doajax_voucher_pdf_save_func() {
 	$notify_url = get_site_url() .'/voucher-payment-successful/?voucheritem='.$lastid;
 	
 	if ($paymentmethod == 'Paypal') {
+		// Fix minh
+		require_once( WPGIFT__PLUGIN_DIR .'/vendor/autoload.php');
 		require_once( WPGIFT__PLUGIN_DIR .'/include/PayPalAuth.php');
-
-		$payer = new Payer();
-		$payer->setPaymentMethod("paypal");
 		
-		$item = new Item();
-		$item->setName($template_options->title)
-    		->setCurrency($setting_options->currency_code)
-    		->setQuantity(1)
-    		->setPrice($value);
+		$client = PayPalAuth::client();
+		$request = new OrdersCreateRequest();
+		$request->prefer('return=representation');
+		$request->body = [
+			"intent" => "CAPTURE",
+			"purchase_units" => [[
+				"reference_id" => "test_ref_id1",
+				"amount" => [
+					"value" => $value,
+					"currency_code" => $setting_options->currency_code
+				]
+			]],
+			"application_context" => [
+				"cancel_url" => $cancel_url,
+				"return_url" => $success_url
+		   ] 
+		];
 
-    	$itemList = new ItemList();
-		$itemList->setItems(array($item));
-		
-		$details = new Details();
-		$details->setSubtotal($value);
-
-		$amount = new Amount();
-		$amount->setCurrency($setting_options->currency_code)
-    		->setTotal($value)
-    		->setDetails($details);
-
-    	$transaction = new Transaction();
-		$transaction->setAmount($amount)
-    		->setItemList($itemList)
-    		->setDescription($message)
-    		->setInvoiceNumber(uniqid());
-
-		$redirectUrls = new RedirectUrls();
-		$redirectUrls->setReturnUrl($success_url)
-    		->setCancelUrl($cancel_url);
-
-    	$payment = new Payment();
-		$payment->setIntent("order")
-    		->setPayer($payer)
-    		->setRedirectUrls($redirectUrls)
-    		->setTransactions(array($transaction));
-
-	    $request = clone $payment;
-		
-    	try {
-		    $payment->create($apiContext);
-		} catch (Exception $ex) {
-    		exit(1);
+		try {
+			// Call API with your client and get a response for your call
+			$response = $client->execute($request);
+			
+			// If call returns body in response, you can get the deserialized version from the result attribute of the response
+			foreach($response->result->links as $link)
+			{
+				if($link->rel == "approve"){
+					print_r($link->href);
+					
+				}
+			}
+			
+		}catch (HttpException $ex) {
+			echo $ex->statusCode;
+			print_r($ex->getMessage());
 		}
-	
-		$approvalUrl = $payment->getApprovalLink();
-		// ResultPrinter::printResult("Created Payment Order Using PayPal. Please visit the URL to Approve.", "Payment", "<a href='$approvalUrl' >$approvalUrl</a>", $request, $payment);
-		
-		echo $approvalUrl;
-		
 	} elseif($paymentmethod == 'Sofort') {
 
 		$Sofortueberweisung = new Sofortueberweisung($setting_options->sofort_configure_key);
@@ -323,14 +305,7 @@ function wpgv__doajax_voucher_pdf_save_func() {
 
 		$stripesuccesspageurl = get_option('wpgv_stripesuccesspage');
 		$stripeemail = ($email) ? $email : $shipping_email;
-		echo '<script type="text/javascript">
-    			var stripe = Stripe("'.$stripe['publishable_key'].'");
-    			stripe.redirectToCheckout({
-			    	sessionId: "'.$session["id"].'"
-    			}).then(function (result) {
-    				console.log(result.error.message);
-    			});
-  			</script>';
+		echo $session->url;
 	} elseif ($paymentmethod == 'MultiSafepay') {
 		$wpgv_multisafepay_test_mode = get_option('wpgv_multisafepay_test_mode') ? get_option('wpgv_multisafepay_test_mode') : '';
 		$wpgv_multisafepay_api_id = get_option('wpgv_multisafepay_api_id') ? get_option('wpgv_multisafepay_api_id') : '0ff28d5cc3a6e7475be5fa174703788fa155fc94';
