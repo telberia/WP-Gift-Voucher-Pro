@@ -407,7 +407,7 @@ jQuery(document).ready(function($) {
                 seller_addr_line4: sellerAddressLine4
             },
             success: function(a) {
-                // fix minh
+
                 window.location = a;
             },
             error: function() {

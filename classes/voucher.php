@@ -80,7 +80,7 @@ class WPGV_Voucher_List extends WP_List_Table {
 	 */
 	public static function used_voucher( $id ) 
 	{
-		// Fix Minh
+		
 		global $wpdb;
 
 		$wpdb->update(

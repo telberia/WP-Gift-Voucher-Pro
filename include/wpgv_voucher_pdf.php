@@ -4,7 +4,7 @@
 
 if( !defined( 'ABSPATH' ) ) exit;  // Exit if accessed directly
 
-// Fix minh
+
 use PayPalCheckoutSdk\Orders\OrdersCreateRequest;
 
 function wpgv__doajax_voucher_pdf_save_func() {
@@ -196,7 +196,7 @@ function wpgv__doajax_voucher_pdf_save_func() {
 	$notify_url = get_site_url() .'/voucher-payment-successful/?voucheritem='.$lastid;
 	
 	if ($paymentmethod == 'Paypal') {
-		// Fix minh
+		
 		require_once( WPGIFT__PLUGIN_DIR .'/vendor/autoload.php');
 		require_once( WPGIFT__PLUGIN_DIR .'/include/PayPalAuth.php');
 		

@@ -594,7 +594,7 @@ function wpgv_voucher_shortcode()
                     <label class="aaaa"><input type="checkbox" class="required" name="acceptVoucherTerms"> '.stripslashes($wpgv_termstext).'</label>
                 </div>
                 <div class="voucherNote">'.$setting_options->voucher_terms_note.'</div>
-                <input type="hidden" id="stripe_publishable_key" class="fix minh" value="'.$setting_options->stripe_publishable_key.'" />
+                <input type="hidden" id="stripe_publishable_key" class="" value="'.$setting_options->stripe_publishable_key.'" />
                 <button type="button" id="voucherPaymentButton" class="" name="finalPayment">'.__('Pay Now', 'gift-voucher' ).' - '.( ($setting_options->currency_position == 'Left') ? $setting_options->currency.' <span></span> ' : ' <span></span> '.$setting_options->currency).'</button>
             </div>
         </div>
