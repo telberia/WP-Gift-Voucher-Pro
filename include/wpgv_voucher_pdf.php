@@ -206,7 +206,7 @@ function wpgv__doajax_voucher_pdf_save_func() {
 		$request->body = [
 			"intent" => "CAPTURE",
 			"purchase_units" => [[
-				"reference_id" => "test_ref_id1",
+				"reference_id" => $template_options->title,
 				"amount" => [
 					"value" => $value,
 					"currency_code" => $setting_options->currency_code

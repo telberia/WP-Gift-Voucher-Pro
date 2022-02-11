@@ -306,7 +306,7 @@ class WPGV_Voucher_List extends WP_List_Table {
 			'checkbalance' => sprintf( '<a href="?page=%s&voucher_code=%s" target="_blank">%s</a>', 'check-vouchers-balance', $item['couponcode'], __('Check Voucher Balance', 'gift-voucher') ),
 		];
 		if($item['payment_status'] == 'Paid') {
-			$form = '<div class="wpgv_wrap"><p>'.__('Redeem Partial Amount', 'gift-voucher').'</p><div class="wpgv_flex"><input type="number" class="voucher_amount" name="voucher_amount" value="'.(int)$gift_voucher->get_balance().'" id="voucher_amount'.$item['id'].'"><input type="button" value="'.__('Add', 'gift-voucher').'" class="button button-primary" onclick="redeemVoucher('.$item['id'].','.(int)$gift_voucher->get_balance().')"></div></div>';
+			$form = '<div class="wpgv_wrap"><p>'.__('Redeem Partial Amount', 'gift-voucher').'</p><div class="wpgv_flex"><input type="number" class="voucher_amount" name="voucher_amount" value="'.(int)$gift_voucher->get_balance().'" id="voucher_amount'.$item['id'].'"><input type="button" value="'.__('Add', 'gift-voucher').'" class="button button-primary" id="redeem_Voucher" onclick="redeemVoucher('.$item['id'].','.(int)$gift_voucher->get_balance().')"></div></div>';
 		}
 
 		return $title . $this->row_actions( $actions ) . $form;
