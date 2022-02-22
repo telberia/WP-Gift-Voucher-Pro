@@ -5,7 +5,7 @@
  * Plugin URI: https://www.codemenschen.at/
  * Author: codemenschen
  * Author URI: https://www.codemenschen.at/
- * Version: 4.1.6
+ * Version: 4.1.8
  * Text Domain: gift-voucher
  * Domain Path: /languages
  * License: GNU General Public License v2.0 or later
@@ -21,7 +21,7 @@
 
 if( !defined( 'ABSPATH' ) ) exit;  // Exit if accessed directly
 
-define( 'WPGIFT_VERSION', '4.1.6' );
+define( 'WPGIFT_VERSION', '4.1.8' );
 define( 'WPGIFT__MINIMUM_WP_VERSION', '4.0' );
 define( 'WPGIFT__PLUGIN_DIR', untrailingslashit( plugin_dir_path( __FILE__ ) ) );
 define( 'WPGIFT__PLUGIN_URL', untrailingslashit( plugins_url( basename( plugin_dir_path( __FILE__ ) ), basename( __FILE__ ) ) ) );

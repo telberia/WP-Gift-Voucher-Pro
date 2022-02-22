@@ -2,8 +2,8 @@
 Contributors: codemenschen
 Tags: gift cards, gift certificates, gift voucher, premium vouchers, generate gift cards
 Requires at least: 4.0
-Tested up to: 5.6
-Stable tag: 4.1.0
+Tested up to: 4.1.8
+Stable tag: 4.1.8
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -209,6 +209,20 @@ If you have suggestions about how to improve Gift Cards plugin, you can [write t
 12. Check Voucher Balance
 
 == Changelog ==
+
+= Version 4.1.8 - Released: February 22, 2021 =
+* Fix: Error of display image in preview on Gift Items and Gift Voucher pages
+
+= Version 4.1.7 - Released: February 14, 2021 =
+* Update v2 Payments API - PayPal.
+* Fix : Translate text "Voucher ordered by , Message:".
+* Fix : Save option of Send Direct Mail is not working.
+* Fix : Redeem Partial Amount (Gift Voucher Orders) negative number.
+* Fix : Currency Position not working.
+* Fix : Fix Hidden Fields giftcard.php file.
+* Remove text "What The File" - classes/class-nag.php.
+* Fix : Error of creating PDF on the Giftcard.
+* Fix : Woocommmer move to status "Pending" when making a payment by Paypal.
 
 = Version 4.1.6 - Released: September 28, 2021 =
 * Update: User interface for Edit Card page
