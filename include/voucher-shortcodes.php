@@ -35,7 +35,7 @@ function wpgv_voucher_successful_shortcode() {
 					), 
 					array( '%d' )
 				);
-				if(isset($_GET['paymentId']) && $voucherrow->payment_status != 'Paid') {
+				if(isset($_GET['token']) && isset($_GET['PayerID']) && $voucherrow->payment_status != 'Paid') {
 					require_once( WPGIFT__PLUGIN_DIR .'/vendor/autoload.php');
 					require_once( WPGIFT__PLUGIN_DIR .'/include/PayPalAuth.php');
 					session_start();
