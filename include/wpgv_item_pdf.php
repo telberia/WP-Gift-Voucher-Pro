@@ -222,14 +222,12 @@ function wpgv__doajax_item_pdf_save_func() {
 		try {
 			// Call API with your client and get a response for your call
 			$response = $client->execute($request);
-			
+			session_start();
+			$_SESSION["paypal_order_id"] = strval($response->result->id );
 			// If call returns body in response, you can get the deserialized version from the result attribute of the response
-			foreach($response->result->links as $link)
-			{
-				if($link->rel == "approve"){
-					print_r($link->href);
-					
-				}
+			foreach ($response->result->links as $link){
+				if ($link->rel == "approve")
+				print_r($link->href);
 			}
 			
 		}catch (HttpException $ex) {

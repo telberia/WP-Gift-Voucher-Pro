@@ -2,13 +2,7 @@
 
 if( !defined( 'ABSPATH' ) ) exit;  // Exit if accessed directly
 
-use PayPal\Api\Amount;
-use PayPal\Api\Authorization;
-use PayPal\Api\Capture;
-use PayPal\Api\Details;
-use PayPal\Api\Payment;
-use PayPal\Api\PaymentExecution;
-use PayPal\Api\Transaction;
+use PayPalCheckoutSdk\Orders\OrdersCaptureRequest;
 
 // Function for Voucher Payment Successful Shortcode
 function wpgv_voucher_successful_shortcode() {
@@ -42,48 +36,29 @@ function wpgv_voucher_successful_shortcode() {
 					array( '%d' )
 				);
 				if(isset($_GET['paymentId']) && $voucherrow->payment_status != 'Paid') {
+					require_once( WPGIFT__PLUGIN_DIR .'/vendor/autoload.php');
 					require_once( WPGIFT__PLUGIN_DIR .'/include/PayPalAuth.php');
+					session_start();
+					$client = PayPalAuth::client();
+					// Here, OrdersCaptureRequest() creates a POST request to /v2/checkout/orders
+					// $response->result->id gives the orderId of the order created above
+					$request = new OrdersCaptureRequest($_SESSION["paypal_order_id"]);
+					$request->prefer('return=representation');
+					$result_getId = null;
+					try {
+						// Call API with your client and get a response for your call
+						
+						$response = $client->execute($request);
+						
+						$result_getId = $response->result->id;
+
+					}catch (HttpException $ex) {
+						
+						echo $ex->statusCode;
+						print_r($ex->getMessage());
+					}
 					
-					$paymentId = $_GET['paymentId'];
-    				$payment = Payment::get($paymentId, $apiContext);
-
-    				$execution = new PaymentExecution();
-    				$execution->setPayerId($_GET['PayerID']);
-
-    				$executionresult = $payment->execute($execution, $apiContext);
-
-					$payment = Payment::get($paymentId, $apiContext);
-
-    				$transactions = $payment->getTransactions();
-    				$transaction = $transactions[0];
-    				$relatedResources = $transaction->getRelatedResources();
-    				$relatedResource = $relatedResources[0];
-    				$order = $relatedResource->getOrder();
-
-    				$totalAmount = $payment->transactions[0]->amount->total;
-
-					$authorization = new Authorization();
-					$authorization->setAmount(new Amount(
-						'{
-							"total": "'.$totalAmount.'",
-							"currency": "'.$setting_options->currency_code.'"
-						}'
-					));
-					$authorizationresult = $order->authorize($authorization, $apiContext);
-
-					$capture = new Capture();
-					$capture->setIsFinalCapture(true);
-					$capture->setAmount(new Amount(
-						'{
-							"total": "'.$totalAmount.'",
-							"currency": "'.$setting_options->currency_code.'"
-						}'
-					));
-					$captureresult = $order->capture($capture, $apiContext);
-
-    				$result = \PayPal\Api\Order::get($order->getId(), $apiContext);
-					
-					update_post_meta( $voucheritem, 'wpgv_paypal_payment_key', $result->getId(), true );
+					update_post_meta( $voucheritem, 'wpgv_paypal_payment_key', $result_getId, true );
 					update_post_meta( $voucheritem, 'wpgv_paypal_mode_for_transaction', (!$setting_options->test_mode) ? 'Livemode' : 'Testmode', true );
 				}
 				WPGV_Gift_Voucher_Activity::record( $voucheritem, 'firsttransact', $voucherrow->amount, 'Voucher payment recieved.' );

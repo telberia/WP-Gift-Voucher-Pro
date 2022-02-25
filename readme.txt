@@ -2,9 +2,9 @@
 Contributors: codemenschen
 Tags: gift cards, gift certificates, gift voucher, premium vouchers, generate gift cards
 Requires at least: 4.0
-Tested up to: 4.1.8
-Stable tag: 4.1.8
-Requires PHP: 5.6
+Tested up to: 4.1.9
+Stable tag: 4.1.9
+Requires PHP: 5.9
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -209,6 +209,9 @@ If you have suggestions about how to improve Gift Cards plugin, you can [write t
 12. Check Voucher Balance
 
 == Changelog ==
+
+= Version 4.1.9 - Released: February 25, 2021 =
+* Fix: Error doesn't receive money when paying by Paypal.
 
 = Version 4.1.8 - Released: February 22, 2021 =
 * Fix: Error of display image in preview on Gift Items and Gift Voucher pages
