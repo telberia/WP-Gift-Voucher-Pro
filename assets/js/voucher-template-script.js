@@ -593,6 +593,7 @@ jQuery(document).ready(function($) {
     });
     // payment 
     jQuery(document).on('click', '#payment-voucher-template', function(event) {
+        $(this).attr("style", "pointer-events: none");
         var checkacceptVoucherTerms = $('input[name=acceptVoucherTerms]:checked').is(':checked');
         if (checkacceptVoucherTerms == true) {
             voucherTemplate.find('.order-voucher-details .acceptVoucherTerms .error-input').hide();

@@ -328,7 +328,7 @@ jQuery(document).ready(function($) {
     });
 
     $('#voucherPaymentButton').on('click', function() {
-
+        $(this).attr("style", "pointer-events: none");
         if (!$('input[name=acceptVoucherTerms]').is(':checked')) {
             alert(frontend_ajax_object.accept_terms);
             return false;
