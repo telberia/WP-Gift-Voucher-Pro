@@ -528,6 +528,8 @@ class Template_Voucher {
                 $company_name = $options->company_name;
                 $name_site = $options->pdf_footer_url;
                 $name_email = $options->pdf_footer_email;
+                $currency = $options->currency;
+                // var_dump($currency);
                 $output = '';
                 foreach ( $this->fields as $field ) {
                     $label = '<label for="' . $field['id'] . '">' . $field['label'] . '</label>';
@@ -543,7 +545,7 @@ class Template_Voucher {
 
                           $input = '';
                           $input .= sprintf(
-                            "<input class='%s' id='%s' name='%s' data-id-result='%s' value='%s'  type='hidden' ><a id='wpgv_trigger_template' class='wpgv_trigger_template' data-tem-style='%s' data-chosse-tem='%s'>%s</a>",
+                            "<input class='settings-currency' id='settings-currency' name='".$currency."' data-id-result='".$currency."' value='".$currency."'  type='hidden' ><input class='%s' id='%s' name='%s' data-id-result='%s' value='%s'  type='hidden' ><a id='wpgv_trigger_template' class='wpgv_trigger_template' data-tem-style='%s' data-chosse-tem='%s'>%s</a>",
                             $field['id'],
                             $field['id'],
                             $field['id'],
@@ -759,6 +761,7 @@ class Template_Voucher {
                                                   <div id="container-form-chosse-template">
                                                     <div class="group_form_edit_temp">      
                                                     <div class="group_input_edit_temp">
+                                                        
                                                         <label class="wpvc_label">Color name voucher</label>
                                                         <input name="color_text_name_voucher_preview" type="text" id="color_text_name_voucher" value="" class="regular-text" aria-required="true">
                                                       </div>

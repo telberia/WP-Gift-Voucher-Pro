@@ -475,6 +475,16 @@ jQuery(document).ready(function($) {
                     jQuery("#json_template").attr('value', json);
                 });
             }
+            // add current
+            var draggable_gift_giftcard_monney = stage.find('#gift_title_first')[0];
+            if (typeof draggable_gift_giftcard_monney !== 'undefined') {
+                var check_giftprice = stage.find('#giftcard_monney')[0];
+                var currency = $("#settings-currency").val();
+                check_giftprice.text(currency + "350");
+                stage.draw();
+            }
+            
+
             var draggable_gift_title_last = stage.find('#gift_title_last')[0];
             if (typeof draggable_gift_title_last !== 'undefined') {
                 draggable_gift_title_last.draggable(true);
@@ -499,6 +509,8 @@ jQuery(document).ready(function($) {
                     jQuery("#json_template").attr('value', json);
                 });
             }
+
+
 
             // Picker color all text
             var colorVoucher = '#000';
@@ -988,7 +1000,8 @@ jQuery(document).ready(function($) {
             $('#edit_price_temp').on('change keyup', function() {
                 if (typeof stage.find('#giftcard_monney')[0] !== 'undefined') {
                     var changeMoney = stage.find('#giftcard_monney')[0];
-                    changeMoney.text("$" + jQuery(this).val());
+                    var currency = $("#settings-currency").val();
+                    changeMoney.text(currency + jQuery(this).val());
                     stage.draw();
                     var json = stage.toJSON();
                     jQuery("#json_template").attr('value', json);
@@ -1102,7 +1115,8 @@ jQuery(document).ready(function($) {
             if (get_input_giftprice.length > 0) {
                 if (typeof stage.find('#giftcard_monney')[0] !== 'undefined') {
                     var check_giftprice = stage.find('#giftcard_monney')[0];
-                    check_giftprice.text("$" + get_input_giftprice);
+                    var currency = $("#settings-currency").val();
+                    check_giftprice.text(currency + get_input_giftprice);
                     stage.draw();
                 }
             }
