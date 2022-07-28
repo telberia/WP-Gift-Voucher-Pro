@@ -67,7 +67,7 @@ function wpgv_is_woocommerce_enable(){
 require_once( WPGIFT__PLUGIN_DIR .'/upgrade.php');
 require_once( WPGIFT__PLUGIN_DIR .'/vendor/autoload.php');
 require_once( WPGIFT__PLUGIN_DIR .'/vendor/sofort/payment/sofortLibSofortueberweisung.inc.php');
-require_once( WPGIFT__PLUGIN_DIR .'/vendor/multisafepay/models/API/Autoloader.php');
+require_once( WPGIFT__PLUGIN_DIR .'/vendor/multisafepaygift/models/API/Autoloader.php');
 require_once( WPGIFT__PLUGIN_DIR .'/classes/rotation.php');
 require_once( WPGIFT__PLUGIN_DIR .'/admin.php');
 require_once( WPGIFT__PLUGIN_DIR .'/front.php');
@@ -785,8 +785,7 @@ function wpgv_em($word)
 	}
 	
 }
-
-function wpgv_mailvarstr_multiple($string, $setting_options, $voucher_options_results) {
+function wpgv_mailvarstr_multiple_admin($string, $setting_options, $voucher_options_results) {
 	
 	$get_link_pdf = array();
 	$get_order_number = array();
@@ -825,6 +824,51 @@ function wpgv_mailvarstr_multiple($string, $setting_options, $voucher_options_re
       '{payment_method}'    => $voucher_options_results->pay_method,
       '{payment_status}'    => $voucher_options_results->payment_status,
       '{pdf_link}'          => implode(', ', $get_link_pdf),
+      '{receipt_link}'      => get_home_url().'/wp-content/uploads/voucherpdfuploads/'.$voucher_options_results->voucherpdf_link.'-receipt.pdf',
+    );
+    return strtr($string, $vars);
+	
+}
+// Fix minh
+function wpgv_mailvarstr_multiple($string, $setting_options, $voucher_options_results, $voucherpdf_link) {
+	
+	$get_link_pdf = array();
+	$get_order_number = array();
+	$from_name = null;
+	$to_name = null;
+	$email = null;
+	$amount = null;
+	foreach($voucher_options_results as $get_value){
+		$get_link_pdf[] = get_home_url().'/wp-content/uploads/voucherpdfuploads/'.$get_value->voucherpdf_link.'.pdf';
+		$get_order_number[] = $get_value->id;
+		$from_name = $get_value->from_name;
+		$to_name = $get_value->to_name;
+		if($get_value->email){
+			$email = $get_value->email;
+		}else{
+			$email = $get_value->shipping_email;
+		}
+		$amount = $get_value->amount;
+	}
+	
+	
+    $vars = array(
+      '{order_type}'        => ($voucher_options_results->order_type) ? $voucher_options_results->order_type : 'vouchers',
+      '{company_name}'      => ($setting_options->company_name) ? stripslashes($setting_options->company_name) : '',
+      '{website_url}'       => get_site_url(),
+      '{sender_email}'      => $setting_options->sender_email,
+      '{sender_name}'       => stripslashes($setting_options->sender_name),
+      '{order_number}'      => $voucher_options_results->id,
+      '{amount}'            => $amount,
+      '{customer_name}'     => stripslashes($from_name),
+      '{recipient_name}'    => stripslashes($to_name),
+      '{customer_email}'    => $email,
+      '{customer_address}'  => $voucher_options_results->address,
+      '{customer_postcode}' => $voucher_options_results->postcode,
+      '{coupon_code}'       => $voucher_options_results->couponcode,
+      '{payment_method}'    => $voucher_options_results->pay_method,
+      '{payment_status}'    => $voucher_options_results->payment_status,
+      '{pdf_link}'          => get_home_url().'/wp-content/uploads/voucherpdfuploads/'.$voucherpdf_link.'.pdf',
       '{receipt_link}'      => get_home_url().'/wp-content/uploads/voucherpdfuploads/'.$voucher_options_results->voucherpdf_link.'-receipt.pdf',
     );
     return strtr($string, $vars);
