@@ -211,7 +211,8 @@ If you have suggestions about how to improve Gift Cards plugin, you can [write t
 == Changelog ==
 
 = Version 4.2.0 - Released: July 28, 2021 =
-* Fix: Fixed mail sending function when buying Gift voucher products. .
+* Fix: Fixed mail sending function when buying Gift voucher products.
+* Fix: Fatal error after adding special offer price for a product
 
 = Version 4.1.9 - Released: February 25, 2021 =
 * Fix: Error doesn't receive money when paying by Paypal.
