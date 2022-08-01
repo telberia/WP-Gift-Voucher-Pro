@@ -386,7 +386,7 @@ function wpgv_giftitems_shortcode($atts = '')
                     <input type="email" name="receipt_email" id="receipt_email" class="form-field">
                 </div>';
 
-        if ($invoice_options->is_invoice_active == 1) {
+        if (isset($invoice_options->is_invoice_active) && $invoice_options->is_invoice_active == 1) {
             $html .= '<div class="wpgv-form-fields" id="wpgv-company_name">
                     <label>' . __('Company Name (for invoice)', 'gift-voucher') . '</label>
                     <span class="error">' . __('Your Company name is required', 'gift-voucher') . '</span>
@@ -475,7 +475,7 @@ function wpgv_giftitems_shortcode($atts = '')
                     <input type="email" name="receipt_email" id="receipt_email" class="form-field">
                 </div>';
 
-        if ($invoice_options->is_invoice_active == 1) {
+        if (isset($invoice_options->is_invoice_active) && $invoice_options->is_invoice_active == 1) {
             $html .= '<div class="wpgv-form-fields" id="wpgv-company_name">
                         <label>' . __('Company Name (for invoice)', 'gift-voucher') . '</label>
                         <span class="error">' . __('Your Company name is required', 'gift-voucher') . '</span>

@@ -80,27 +80,27 @@ $is_order_form_enable = $options->is_order_form_enable;
 <div id="wpgv-purchase-container" style="<?php echo $selected ? '' : 'display: none;'; ?>">
     <div class="wpgv-field-container" style="<?php echo ($is_order_form_enable == 1) ? '' : 'display: none;'; ?>">
         <label for="wpgv_your_name" class="wpgv-label"><?php echo __( 'Your Name', 'gift-voucher' ); ?></label>
-        <input type="text" id="wpgv_your_name" name="wpgv_your_name" class="wpgv-input-text"  value="<?php echo $wpgv_your_name; ?>" <?php echo ($is_order_form_enable == 1) ? 'required' : ''; ?>>
+        <input type="text" id="wpgv_your_name" name="wpgv_your_name" class="wpgv-input-text"  value="" <?php echo ($is_order_form_enable == 1) ? 'required' : ''; ?>>
     </div>
 
     <div class="wpgv-field-container" style="<?php echo ($is_order_form_enable == 1) ? '' : 'display: none;'; ?>">
         <label for="wpgv_recipient_name" class="wpgv-label"><?php echo __( 'Recipient Name', 'gift-voucher' ); ?></label>
-        <input type="text" id="wpgv_recipient_name" name="wpgv_recipient_name" class="wpgv-input-text"  value="<?php echo $wpgv_recipient_name; ?>" <?php echo ($is_order_form_enable == 1) ? 'required' : ''; ?>>
+        <input type="text" id="wpgv_recipient_name" name="wpgv_recipient_name" class="wpgv-input-text"  value="" <?php echo ($is_order_form_enable == 1) ? 'required' : ''; ?>>
     </div>
 
     <div class="wpgv-field-container" style="<?php echo ($is_order_form_enable == 1) ? '' : 'display: none;'; ?>">
         <label for="wpgv_recipient_email" class="wpgv-label"><?php echo __( 'Send the voucher to recipient email here', 'gift-voucher' ); ?></label>
-        <input type="email" id="wpgv_recipient_email" name="wpgv_recipient_email" class="wpgv-input-text"  value="<?php echo $wpgv_recipient_email; ?>" <?php echo ($is_order_form_enable == 1) ? 'required' : ''; ?>>
+        <input type="email" id="wpgv_recipient_email" name="wpgv_recipient_email" class="wpgv-input-text"  value="" <?php echo ($is_order_form_enable == 1) ? 'required' : ''; ?>>
     </div>
 
     <div class="wpgv-field-container" style="<?php echo ($is_order_form_enable == 1) ? '' : 'display: none;'; ?>">
         <label for="wpgv_your_email" class="wpgv-label"><?php echo __( 'Your email address (for the receipt)', 'gift-voucher' ); ?></label>
-        <input type="email" id="wpgv_your_email" name="wpgv_your_email" class="wpgv-input-text"  value="<?php echo $wpgv_your_email; ?>" <?php echo ($is_order_form_enable == 1) ? 'required' : ''; ?>>
+        <input type="email" id="wpgv_your_email" name="wpgv_your_email" class="wpgv-input-text"  value="" <?php echo ($is_order_form_enable == 1) ? 'required' : ''; ?>>
     </div>
 
     <div class="wpgv-field-container" style="<?php echo ($is_order_form_enable == 1) ? '' : 'display: none;'; ?>">
         <label for="wpgv-message" class="wpgv-label"><?php echo __( 'Personal Message (Optional) (Max: 250 Characters)', 'gift-voucher' ); ?> </label>
-        <textarea maxlength="50" id="wpgv_message" name="wpgv_message"><?php echo $wpgv_message; ?></textarea>
+        <textarea maxlength="50" id="wpgv_message" name="wpgv_message"></textarea>
     </div>
 
     <div id="wpgv-quantity-one-per-recipient" class="wpgv-field-container">
