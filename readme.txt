@@ -213,6 +213,10 @@ If you have suggestions about how to improve Gift Cards plugin, you can [write t
 = Version 4.2.0 - Released: July 28, 2021 =
 * Fix: Fixed mail sending function when buying Gift voucher products.
 * Fix: Fatal error after adding special offer price for a product
+* Fix: Fixed the sort by function of Gift Items in the backend
+* Fix: Fixed the path of the multisafepay library
+* Fix: Fixed the currency code on gift card page in the backend
+* Fix: Fixed the billing error due to get_magic_quotes_runtime() function
 
 = Version 4.1.9 - Released: February 25, 2021 =
 * Fix: Error doesn't receive money when paying by Paypal.
